@@ -1,0 +1,1472 @@
+[
+{
+    "fields": {
+        "user_permission": 2,
+        "photo": "himanshu.jpeg",
+        "user_password": "password10",
+        "user_college": "iitp",
+        "posts": 10,
+        "link": "",
+        "user_name": "himanshu",
+        "user_email": "himanshu.cs13@iitp.ac.in"
+    },
+    "model": "Article.myuser",
+    "pk": 2
+},
+{
+    "fields": {
+        "user_permission": 0,
+        "photo": "himanshu.jpeg",
+        "user_password": "shubham10",
+        "user_college": "sdsd,s",
+        "posts": 10,
+        "link": "",
+        "user_name": "shubham",
+        "user_email": "Ssd"
+    },
+    "model": "Article.myuser",
+    "pk": 3
+},
+{
+    "fields": {
+        "user_permission": 1,
+        "photo": "himanshu.jpeg",
+        "user_password": "aditya100",
+        "user_college": "",
+        "posts": 10,
+        "link": "",
+        "user_name": "aditya",
+        "user_email": ""
+    },
+    "model": "Article.myuser",
+    "pk": 4
+},
+{
+    "fields": {
+        "user_permission": 1,
+        "photo": "himanshu.jpeg",
+        "user_password": "arijit",
+        "user_college": "",
+        "posts": 10,
+        "link": "",
+        "user_name": "arijit",
+        "user_email": "arijit@fac"
+    },
+    "model": "Article.myuser",
+    "pk": 5
+},
+{
+    "fields": {
+        "user_permission": 1,
+        "photo": "himanshu.jpeg",
+        "user_password": "samrat",
+        "user_college": "",
+        "posts": 10,
+        "link": "",
+        "user_name": "samrat",
+        "user_email": "samrat@iitp.ac.in"
+    },
+    "model": "Article.myuser",
+    "pk": 6
+},
+{
+    "fields": {
+        "user_permission": 1,
+        "photo": "himanshu.jpeg",
+        "user_password": "arijit",
+        "user_college": "",
+        "posts": 10,
+        "link": "",
+        "user_name": "arijit",
+        "user_email": "arijit@iitp.ac.in"
+    },
+    "model": "Article.myuser",
+    "pk": 7
+},
+{
+    "fields": {
+        "user_permission": 1,
+        "photo": "himanshu.jpeg",
+        "user_password": "halder",
+        "user_college": "",
+        "posts": 10,
+        "link": "",
+        "user_name": "halder",
+        "user_email": "halder@iitp.ac.in"
+    },
+    "model": "Article.myuser",
+    "pk": 8
+},
+{
+    "fields": {
+        "user_permission": 1,
+        "photo": "himanshu.jpeg",
+        "user_password": "sriparna",
+        "user_college": "",
+        "posts": 10,
+        "link": "",
+        "user_name": "sriparna",
+        "user_email": "sriparna@iitp.ac.in"
+    },
+    "model": "Article.myuser",
+    "pk": 9
+},
+{
+    "fields": {
+        "user_permission": 1,
+        "photo": "himanshu.jpeg",
+        "user_password": "somanath",
+        "user_college": "",
+        "posts": 10,
+        "link": "",
+        "user_name": "somanath",
+        "user_email": "som@iitp.ac.in"
+    },
+    "model": "Article.myuser",
+    "pk": 10
+},
+{
+    "fields": {
+        "user_permission": 1,
+        "photo": "himanshu.jpeg",
+        "user_password": "joydeep",
+        "user_college": "",
+        "posts": 10,
+        "link": "",
+        "user_name": "joydeep",
+        "user_email": "joydeep@iitp.ac.in"
+    },
+    "model": "Article.myuser",
+    "pk": 11
+},
+{
+    "fields": {
+        "user_permission": 1,
+        "photo": "himanshu.jpeg",
+        "user_password": "Asif",
+        "user_college": "",
+        "posts": 10,
+        "link": "",
+        "user_name": "Asif",
+        "user_email": "asif@iitp.ac.in"
+    },
+    "model": "Article.myuser",
+    "pk": 12
+},
+{
+    "fields": {
+        "user_permission": 1,
+        "photo": "himanshu.jpeg",
+        "user_password": "ashok",
+        "user_college": "",
+        "posts": 10,
+        "link": "",
+        "user_name": "Ashok",
+        "user_email": "ashok@iitp.ac.in"
+    },
+    "model": "Article.myuser",
+    "pk": 13
+},
+{
+    "fields": {
+        "user_permission": 1,
+        "photo": "himanshu.jpeg",
+        "user_password": "sudhan",
+        "user_college": "",
+        "posts": 10,
+        "link": "",
+        "user_name": "sudhan",
+        "user_email": "smajhi@iitp.ac.in"
+    },
+    "model": "Article.myuser",
+    "pk": 14
+},
+{
+    "fields": {
+        "user_permission": 2,
+        "photo": "himanshu.jpeg",
+        "user_password": "ravi",
+        "user_college": "",
+        "posts": 10,
+        "link": "",
+        "user_name": "ravi",
+        "user_email": "ravi.cs13@iitp.ac.in"
+    },
+    "model": "Article.myuser",
+    "pk": 15
+},
+{
+    "fields": {
+        "user_permission": 2,
+        "photo": "himanshu.jpeg",
+        "user_password": "hparmar",
+        "user_college": "",
+        "posts": 10,
+        "link": "",
+        "user_name": "hparmar",
+        "user_email": "hparmar.cs13@iitp.ac.in"
+    },
+    "model": "Article.myuser",
+    "pk": 16
+},
+{
+    "fields": {
+        "user_permission": 2,
+        "photo": "himanshu.jpeg",
+        "user_password": "abhijeet",
+        "user_college": "",
+        "posts": 10,
+        "link": "",
+        "user_name": "abhijeet",
+        "user_email": "abhijeet.me13@iitp.ac.in"
+    },
+    "model": "Article.myuser",
+    "pk": 17
+},
+{
+    "fields": {
+        "user_permission": 2,
+        "photo": "himanshu.jpeg",
+        "user_password": "dennis",
+        "user_college": "",
+        "posts": 10,
+        "link": "",
+        "user_name": "dennis",
+        "user_email": "don.cs13@iitp.ac.in"
+    },
+    "model": "Article.myuser",
+    "pk": 18
+},
+{
+    "fields": {
+        "user_permission": 2,
+        "photo": "himanshu.jpeg",
+        "user_password": "ritik",
+        "user_college": "",
+        "posts": 10,
+        "link": "",
+        "user_name": "ritik",
+        "user_email": "ritik.cs13@iitp.ac.in"
+    },
+    "model": "Article.myuser",
+    "pk": 19
+},
+{
+    "fields": {
+        "user_permission": 2,
+        "photo": "himanshu.jpeg",
+        "user_password": "karan",
+        "user_college": "",
+        "posts": 10,
+        "link": "",
+        "user_name": "karan",
+        "user_email": "karan.me13@iitp.ac.in"
+    },
+    "model": "Article.myuser",
+    "pk": 20
+},
+{
+    "fields": {
+        "user_permission": 2,
+        "photo": "himanshu.jpeg",
+        "user_password": "vinay",
+        "user_college": "",
+        "posts": 10,
+        "link": "",
+        "user_name": "vinay",
+        "user_email": "vinay.cs13@iitp.ac.in"
+    },
+    "model": "Article.myuser",
+    "pk": 21
+},
+{
+    "fields": {
+        "user_permission": 2,
+        "photo": "himanshu.jpeg",
+        "user_password": "kuntal",
+        "user_college": "",
+        "posts": 10,
+        "link": "",
+        "user_name": "kuntal",
+        "user_email": "kuntal.cs13@iitp.ac.in"
+    },
+    "model": "Article.myuser",
+    "pk": 22
+},
+{
+    "fields": {
+        "user_permission": 2,
+        "photo": "himanshu.jpeg",
+        "user_password": "rajbir",
+        "user_college": "",
+        "posts": 10,
+        "link": "",
+        "user_name": "rajbir",
+        "user_email": "rajbir.ee13@iitp.ac.in"
+    },
+    "model": "Article.myuser",
+    "pk": 23
+},
+{
+    "fields": {
+        "user_permission": 2,
+        "photo": "himanshu.jpeg",
+        "user_password": "aman",
+        "user_college": "",
+        "posts": 10,
+        "link": "",
+        "user_name": "aman",
+        "user_email": "aman.me13@iitp.ac.in"
+    },
+    "model": "Article.myuser",
+    "pk": 24
+},
+{
+    "fields": {
+        "user_permission": 2,
+        "photo": "himanshu.jpeg",
+        "user_password": "pukhraj",
+        "user_college": "",
+        "posts": 10,
+        "link": "",
+        "user_name": "pukhraj",
+        "user_email": "pukhraj.ee13@iitp.ac.in"
+    },
+    "model": "Article.myuser",
+    "pk": 25
+},
+{
+    "fields": {
+        "user_permission": 2,
+        "photo": "himanshu.jpeg",
+        "user_password": "rakesh",
+        "user_college": "",
+        "posts": 10,
+        "link": "",
+        "user_name": "rakesh",
+        "user_email": "rakesh.ee13@iitp.ac.in"
+    },
+    "model": "Article.myuser",
+    "pk": 26
+},
+{
+    "fields": {
+        "user_permission": 2,
+        "photo": "himanshu.jpeg",
+        "user_password": "tanuj",
+        "user_college": "",
+        "posts": 10,
+        "link": "",
+        "user_name": "tanuj",
+        "user_email": "tanuj.ee13@iitp.ac.in"
+    },
+    "model": "Article.myuser",
+    "pk": 27
+},
+{
+    "fields": {
+        "user_permission": 2,
+        "photo": "himanshu.jpeg",
+        "user_password": "kuldeep",
+        "user_college": "",
+        "posts": 10,
+        "link": "",
+        "user_name": "kuldeep",
+        "user_email": "kuldeep.cs13@iitp.ac.in"
+    },
+    "model": "Article.myuser",
+    "pk": 28
+},
+{
+    "fields": {
+        "user_permission": 2,
+        "photo": "himanshu.jpeg",
+        "user_password": "ramayan",
+        "user_college": "",
+        "posts": 10,
+        "link": "",
+        "user_name": "ramayan",
+        "user_email": "ramayan.cs13@iitp.ac.in"
+    },
+    "model": "Article.myuser",
+    "pk": 29
+},
+{
+    "fields": {
+        "user_permission": 2,
+        "photo": "himanshu.jpeg",
+        "user_password": "titas",
+        "user_college": "",
+        "posts": 10,
+        "link": "",
+        "user_name": "titas",
+        "user_email": "titas.ee13@iitp.ac.in"
+    },
+    "model": "Article.myuser",
+    "pk": 30
+},
+{
+    "fields": {
+        "body": "CPU",
+        "num_comm": 4,
+        "title": "Architecture",
+        "doc": "assets/uploaded_files/1427886662_36_Lab3.odt",
+        "author": "shubham",
+        "like_articles": "000000000",
+        "tag": "org",
+        "likes": 5,
+        "key": false,
+        "date": "2015-04-06T09:48:59.483Z"
+    },
+    "model": "Article.article",
+    "pk": 3
+},
+{
+    "fields": {
+        "body": "Lab",
+        "num_comm": 0,
+        "title": "Software",
+        "doc": "",
+        "author": "shubham",
+        "like_articles": "0",
+        "tag": "sftw",
+        "likes": 15,
+        "key": false,
+        "date": "2015-04-06T09:48:59.483Z"
+    },
+    "model": "Article.article",
+    "pk": 4
+},
+{
+    "fields": {
+        "body": "FSM",
+        "num_comm": 0,
+        "title": "KMP",
+        "doc": "",
+        "author": "aditya",
+        "like_articles": "5",
+        "tag": "",
+        "likes": 1,
+        "key": true,
+        "date": "2015-04-06T09:48:59.483Z"
+    },
+    "model": "Article.article",
+    "pk": 5
+},
+{
+    "fields": {
+        "body": "<html>\r\n\t<head>\r\n\t\t<meta charset=\"utf-8\"> \r\n\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\r\n\t\t<title>e-MIS Header</title>\r\n\t\t<link type=\"text/css\" rel=\"stylesheet\" href=\"../../static/frontend/bootstrap/css/bootstrap.css\"/>\r\n\t\t<link type=\"text/css\" rel=\"stylesheet\" href=\"../../static/frontend/bootstrap/css/bootstrap.min.css\"/>\r\n\t\t<script src=\"../../static/frontend/js/jquery-2.1.3.min.js\"></script>\r\n        <script src=\"../../static/frontend/bootstrap/js/bootstrap.min.js\"></script>\r\n\t\t<script type=\"text/javascript\">\r\n\t\t\t$(document).ready(function(){\r\n\t\t\t\t$('[data-toggle=\"popover\"]').popover({\r\n\t\t\t\t\tplacement : 'bottom',\r\n\t\t\t\t\ttrigger:'hover'\r\n\t\t\t\t});\r\n\t\t\t});\r\n\t\t</script>\r\n\t</head>\r\n\t<body>\r\n\t\t<nav class=\"navbar navbar-default\" style=\"background: #386db1\">\r\n  \t<div class=\"container-fluid\">\r\n    <!-- Brand and toggle get grouped for better mobile display -->\r\n   \r\n    <!-- Collect the nav links, forms, and other content for toggling -->\r\n    <div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\r\n      <ul class=\"nav navbar-nav\">\r\n        \r\n        <li><a href=\"/articles/all/\">\r\n\t\t<img alt=\"Home\" href=\"/articles/all/\" src=\"../../static/frontend/images/Home.png\" data-toggle=\"popover\" data-content=\"Home\"/>\r\n\t\t</a></li>\r\n\t\t<li><a href=\"/front/\">\r\n\t\t<img alt=\"Algorithm Illustration\" src=\"../../static/frontend/images/stats.png\" data-toggle=\"popover\" data-content=\"Algorithm Illustration\"/>\r\n\t\t</a></li>\r\n        \r\n      </ul>\r\n      <form class=\"navbar-form navbar-left\" role=\"search\" style=\"margin-top: 14px;\">\r\n        <div class=\"input-group\" style=\"padding-left: 75px;\">\r\n\t\t  <div class=\"input-group-addon icon-user\"><span class=\"glyphicon glyphicon-search\"></span></div>\r\n          <input type=\"text\" class=\"form-control\" placeholder=\"Search\" id=\"search\" name=\"search\" style=\"width: 500px;\">{% csrf_token %}\r\n        </div>\r\n      </form>\r\n      <ul class=\"nav navbar-nav navbar-right\">\r\n        <li class=\"dropdown\">\r\n          <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\" role=\"button\" aria-expanded=\"false\">\r\n\t\t  <img alt=\"Edit\" src=\"../../static/frontend/images/edit_user.png\"/>\r\n\t\t  <span class=\"caret\"></span></a>\r\n          <ul class=\"dropdown-menu\" role=\"menu\">\r\n\t    {% if user_permission == 0 %}\r\n\t    \t<li><a href=\"/add_user/\">Manage Users</a></li>\r\n\t    \t<li><a href=\"/myposts/all/\">My Posts</a></li>\r\n            <li><a href=\"/articles/\">Create an Article</a></li>\r\n\t    {% endif %}\r\n\t    {% if user_permission == 1 %}\r\n\t    \t<li><a href=\"/myposts/all/\">My Posts</a></li>\r\n            <li><a href=\"/articles/\">Create an Article</a></li>\r\n\t    {% endif %}\r\n\t    {% if user_permission >= 0%}\t\r\n            <li><a href=\"/edit/\">Edit Profile</a></li>\r\n\t    {% endif %}\r\n            <li class=\"divider\"></li>\t\r\n            <li><a href=\"/logout/\">Logout</a></li>\r\n          </ul>\r\n        </li>\r\n      </ul>\r\n    </div><!-- /.navbar-collapse -->\r\n  </div><!-- /.container-fluid -->\r\n</nav>\r\n{% block content %}\r\n{% endblock %}\r\n\t</body>\r\n</html>",
+        "num_comm": 0,
+        "title": "Check",
+        "doc": "",
+        "author": "shubham",
+        "like_articles": "",
+        "tag": "ch",
+        "likes": 0,
+        "key": false,
+        "date": "2015-04-06T10:02:49.716Z"
+    },
+    "model": "Article.article",
+    "pk": 6
+},
+{
+    "fields": {
+        "body": "We have to complete the software and hardware project upto thursday at any cost.\r\nWe have to complete the software and hardware project upto thursday at any cost.\r\nWe have to complete the software and hardware project upto thursday at any cost.\r\nWe have to complete the software and hardware project upto thursday at any cost.\r\nWe have to complete the software and hardware project upto thursday at any cost.\r\nWe have to complete the software and hardware project upto thursday at any cost.\r\nWe have to complete the software and hardware project upto thursday at any cost.\r\nWe have to complete the software and hardware project upto thursday at any cost.",
+        "num_comm": 3,
+        "title": "Linux Lab",
+        "doc": "",
+        "author": "shubham",
+        "like_articles": "",
+        "tag": "",
+        "likes": 0,
+        "key": false,
+        "date": "2015-04-07T13:39:21.302Z"
+    },
+    "model": "Article.article",
+    "pk": 7
+},
+{
+    "fields": {
+        "body": "My Name is Himanshu Garg\r\nMy Name is Himanshu Garg\r\nMy Name is Himanshu Garg\r\nMy Name is Himanshu Garg\r\n",
+        "num_comm": 0,
+        "title": "Name",
+        "doc": "",
+        "author": "shubham",
+        "like_articles": "",
+        "tag": "",
+        "likes": 0,
+        "key": false,
+        "date": "2015-04-07T13:57:47.590Z"
+    },
+    "model": "Article.article",
+    "pk": 8
+},
+{
+    "fields": {
+        "body": "Is it working\r\nwewew wewe ewe wew ew ew e we w e",
+        "num_comm": 2,
+        "title": "Check",
+        "doc": "",
+        "author": "shubham",
+        "like_articles": "09",
+        "tag": "",
+        "likes": 10,
+        "key": false,
+        "date": "2015-04-07T14:02:25.595Z"
+    },
+    "model": "Article.article",
+    "pk": 9
+},
+{
+    "fields": {
+        "body": "Lab",
+        "num_comm": 0,
+        "title": "Software",
+        "doc": "",
+        "author": "aditya",
+        "like_articles": "",
+        "tag": "",
+        "likes": 0,
+        "key": true,
+        "date": "2015-04-08T09:50:31.045Z"
+    },
+    "model": "Article.article",
+    "pk": 10
+},
+{
+    "fields": {
+        "body": "Lab\r\nLab",
+        "num_comm": 0,
+        "title": "Hello",
+        "doc": "",
+        "author": "aditya",
+        "like_articles": "",
+        "tag": "",
+        "likes": 0,
+        "key": true,
+        "date": "2015-04-08T13:26:40.920Z"
+    },
+    "model": "Article.article",
+    "pk": 11
+},
+{
+    "fields": {
+        "body": "hsdhs\r\nxxf\r\ndfdfdf\r\nsdsdsd\r\n\r\n\r\n\r\n\r\n\r\n\r\nsdsrs\r\nsfdf\r\n\r\nfffs",
+        "num_comm": 0,
+        "title": "Himanshu",
+        "doc": "",
+        "author": "shubham",
+        "like_articles": "",
+        "tag": "",
+        "likes": 0,
+        "key": false,
+        "date": "2015-04-15T10:06:27.544Z"
+    },
+    "model": "Article.article",
+    "pk": 12
+},
+{
+    "fields": {
+        "body": "jsusuhd",
+        "num_comm": 0,
+        "title": "Himanshu",
+        "doc": "",
+        "author": "shubham",
+        "like_articles": "",
+        "tag": "",
+        "likes": 0,
+        "key": false,
+        "date": "2015-04-15T10:37:59.007Z"
+    },
+    "model": "Article.article",
+    "pk": 13
+},
+{
+    "fields": {
+        "body": "HE",
+        "num_comm": 0,
+        "title": "Himanshu",
+        "doc": "",
+        "author": "shubham",
+        "like_articles": "",
+        "tag": "",
+        "likes": 0,
+        "key": false,
+        "date": "2015-04-15T10:39:03.552Z"
+    },
+    "model": "Article.article",
+    "pk": 14
+},
+{
+    "fields": {
+        "body": "dsds",
+        "num_comm": 0,
+        "title": "sd",
+        "doc": "",
+        "author": "shubham",
+        "like_articles": "",
+        "tag": "",
+        "likes": 0,
+        "key": false,
+        "date": "2015-04-15T10:40:52.560Z"
+    },
+    "model": "Article.article",
+    "pk": 15
+},
+{
+    "fields": {
+        "body": "sddd",
+        "num_comm": 0,
+        "title": "swedws",
+        "doc": "",
+        "author": "shubham",
+        "like_articles": "",
+        "tag": "",
+        "likes": 0,
+        "key": false,
+        "date": "2015-04-15T10:41:24.097Z"
+    },
+    "model": "Article.article",
+    "pk": 16
+},
+{
+    "fields": {
+        "body": "xcx",
+        "num_comm": 0,
+        "title": "xdcsd",
+        "doc": "",
+        "author": "shubham",
+        "like_articles": "",
+        "tag": "",
+        "likes": 0,
+        "key": false,
+        "date": "2015-04-15T10:44:13.328Z"
+    },
+    "model": "Article.article",
+    "pk": 17
+},
+{
+    "fields": {
+        "body": "xcx",
+        "num_comm": 0,
+        "title": "xdcsd",
+        "doc": "",
+        "author": "shubham",
+        "like_articles": "",
+        "tag": "",
+        "likes": 0,
+        "key": false,
+        "date": "2015-04-15T10:44:13.584Z"
+    },
+    "model": "Article.article",
+    "pk": 18
+},
+{
+    "fields": {
+        "body": "asasasa",
+        "num_comm": 0,
+        "title": "sdsd",
+        "doc": "",
+        "author": "shubham",
+        "like_articles": "",
+        "tag": "",
+        "likes": 0,
+        "key": false,
+        "date": "2015-04-15T10:45:46.334Z"
+    },
+    "model": "Article.article",
+    "pk": 19
+},
+{
+    "fields": {
+        "body": "Lab",
+        "num_comm": 0,
+        "title": "Software",
+        "doc": "",
+        "author": "shubham",
+        "like_articles": "",
+        "tag": "",
+        "likes": 0,
+        "key": true,
+        "date": "2015-04-15T12:17:22.911Z"
+    },
+    "model": "Article.article",
+    "pk": 20
+},
+{
+    "fields": {
+        "body": "Lab",
+        "num_comm": 0,
+        "title": "Software",
+        "doc": "",
+        "author": "shubham",
+        "like_articles": "",
+        "tag": "",
+        "likes": 0,
+        "key": true,
+        "date": "2015-04-15T12:17:53.005Z"
+    },
+    "model": "Article.article",
+    "pk": 21
+},
+{
+    "fields": {
+        "body": "Suppose we select a random item p from the n items we seek to sort. Quicksort\r\n(shown in action in Figure 4.5) separates the n \u2212 1 other items into two piles: a\r\nlow pile containing all the elements that appear before p in sorted order and a\r\nhigh pile containing all the elements that appear after p in sorted order. Low and\r\nhigh denote the array positions we place the respective piles, leaving a single slot\r\nbetween them for p.\r\nSuch partitioning buys us two things. First, the pivot element p ends up in\r\nthe exact array position it will reside in the the final sorted order. Second, after\r\npartitioning no element flops to the other side in the final sorted order. Thus we\r\ncan now sort the elements to the left and the right of the pivot independently! This\r\ngives us a recursive sorting algorithm, since we can use the partitioning approach to\r\nsort each subproblem. The algorithm must be correct since each element ultimately\r\nends up in the proper position:",
+        "num_comm": 0,
+        "title": "Randomized Quick Sort",
+        "doc": "assets/uploaded_files/1429126738_5_Screenshot from 2015-01-19 21:44:23.png",
+        "author": "samrat",
+        "like_articles": "22",
+        "tag": "Quick Sort nlgn",
+        "likes": 1,
+        "key": true,
+        "date": "2015-04-15T19:38:58.502Z"
+    },
+    "model": "Article.article",
+    "pk": 22
+},
+{
+    "fields": {
+        "body": "Heaps can be constructed incrementally, by inserting each new element into the\r\nleft-most open spot in the array, namely the (n + 1)st position of a previously\r\nn-element heap. This ensures the desired balanced shape of the heap-labeled tree,\r\nbut does not necessarily maintain the dominance ordering of the keys. The new\r\nkey might be less than its parent in a min-heap, or greater than its parent in a\r\nmax-heap.\r\nThe solution is to swap any such dissatisfied element with its parent. The old\r\nparent is now happy, because it is properly dominated. The other child of the old\r\nparent is still happy, because it is now dominated by an element even more extreme\r\nthan its previous parent. The new element is now happier, but may still dominate\r\nits new parent. We now recur at a higher level, bubbling up the new key to its\r\nproper position in the hierarchy. Since we replace the root of a subtree by a larger\r\none at each step, we preserve the heap order elsewhere.\r\npq_insert(priority_queue *q, item_type x)\r\n{\r\nif (q->n >= PQ_SIZE)\r\nprintf(\"Warning: priority queue overflow insert x=%d\\n\",x);\r\nelse {\r\nq->n = (q->n) + 1;\r\nq->q[ q->n ] = x;\r\nbubble_up(q, q->n);\r\n}\r\n}\r\nbubble_up(priority_queue *q, int p)\r\n{\r\nif (pq_parent(p) == -1) return; /* at root of heap, no parent */\r\nif (q->q[pq_parent(p)] > q->q[p]) {\r\npq_swap(q,p,pq_parent(p));\r\nbubble_up(q, pq_parent(p));\r\n}\r\n}",
+        "num_comm": 0,
+        "title": "Cnstructing Heaps",
+        "doc": "",
+        "author": "samrat",
+        "like_articles": "",
+        "tag": "Heaps",
+        "likes": 0,
+        "key": true,
+        "date": "2015-04-15T19:40:53.541Z"
+    },
+    "model": "Article.article",
+    "pk": 23
+},
+{
+    "fields": {
+        "body": "A spanning tree of a graph G = (V, E) is a subset of edges from E forming a\r\ntree connecting all vertices of V . For edge-weighted graphs, we are particularly\r\ninterested in the minimum spanning tree\u2014the spanning tree whose sum of edge\r\nweights is as small as possible.\r\nMinimum spanning trees are the answer whenever we need to connect a set\r\nof points (representing cities, homes, junctions, or other locations) by the smallest\r\namount of roadway, wire, or pipe. Any tree is the smallest possible connected graph\r\nin terms of number of edges, while the minimum spanning tree is the smallest\r\nconnected graph in terms of edge weight. In geometric problems, the point set\r\np 1 , . . . , p n defines a complete graph, with edge (v i , v j ) assigned a weight equal to\r\nthe distance from p i to p j.",
+        "num_comm": 0,
+        "title": "Minimum Spanning Trees",
+        "doc": "",
+        "author": "samrat",
+        "like_articles": "",
+        "tag": "mst",
+        "likes": 0,
+        "key": true,
+        "date": "2015-04-15T19:42:15.067Z"
+    },
+    "model": "Article.article",
+    "pk": 24
+},
+{
+    "fields": {
+        "body": "Input description: A set of n records, each identified by one or more key fields.\r\nProblem description: Build and maintain a data structure to efficiently locate,\r\ninsert, and delete the record associated with any query key q.\r\nDiscussion: The abstract data type \u201cdictionary\u201d is one of the most impor-\r\ntant structures in computer science. Dozens of data structures have been pro-\r\nposed for implementing dictionaries, including hash tables, skip lists, and bal-\r\nanced/unbalanced binary search trees. This means that choosing the best one can\r\nbe tricky. It can significantly impact performance. However, in practice, it is more\r\nimportant to avoid using a bad data structure than to identify the single best option\r\navailable.",
+        "num_comm": 0,
+        "title": "Dictionaries",
+        "doc": "",
+        "author": "samrat",
+        "like_articles": "",
+        "tag": "dict",
+        "likes": 0,
+        "key": true,
+        "date": "2015-04-15T19:43:11.807Z"
+    },
+    "model": "Article.article",
+    "pk": 25
+},
+{
+    "fields": {
+        "body": "Data structures can be neatly classified as either contiguous or linked, depending\r\nupon whether they are based on arrays or pointers:\r\n\u2022 Contiguously-allocated structures are composed of single slabs of memory, and\r\ninclude arrays, matrices, heaps, and hash tables.\r\n\u2022 Linked data structures are composed of distinct chunks of memory bound\r\ntogether by pointers, and include lists, trees, and graph adjacency lists.",
+        "num_comm": 0,
+        "title": "Contiguous vs. Linked Data Structures",
+        "doc": "",
+        "author": "samrat",
+        "like_articles": "",
+        "tag": "linkedlist contiguous",
+        "likes": 0,
+        "key": true,
+        "date": "2015-04-15T19:44:16.107Z"
+    },
+    "model": "Article.article",
+    "pk": 26
+},
+{
+    "fields": {
+        "body": "We have seen data structures that allow fast search or flexible update, but not fast\r\nsearch and flexible update. Unsorted, doubly-linked lists supported insertion and\r\ndeletion in O(1) time but search took linear time in the worse case. Sorted arrays\r\nsupport binary search and logarithmic query times, but at the cost of linear-time\r\nupdate.\r\nBinary search requires that we have fast access to two elements\u2014specifically\r\nthe median elements above and below the given node. To combine these ideas, we\r\nneed a \u201clinked list\u201d with two pointers per node. This is the basic idea behind binary\r\nsearch trees.",
+        "num_comm": 0,
+        "title": "Binary Search Trees",
+        "doc": "",
+        "author": "halder",
+        "like_articles": "",
+        "tag": "bst",
+        "likes": 0,
+        "key": true,
+        "date": "2015-04-15T19:47:36.311Z"
+    },
+    "model": "Article.article",
+    "pk": 27
+},
+{
+    "fields": {
+        "body": "One of the most powerful techniques for solving problems is to break them down\r\ninto smaller, more easily solved pieces. Smaller problems are less overwhelming, and\r\nthey permit us to focus on details that are lost when we are studying the entire\r\nproblem. A recursive algorithm starts to become apparent when we can break\r\nthe problem into smaller instances of the same type of problem. Effective parallel\r\nprocessing requires decomposing jobs into at least as many tasks as processors, and\r\nis becoming more important with the advent of cluster computing and multicore\r\nprocessors.\r\nTwo important algorithm design paradigms are based on breaking problems\r\ndown into smaller problems. In Chapter 8, we will see dynamic programming,\r\nwhich typically removes one element from the problem, solves the smaller problem,\r\nand then uses the solution to this smaller problem to add back the element in the\r\nproper way. Divide-and-conquer instead splits the problem in (say) halves, solves\r\neach half, then stitches the pieces back together to form a full solution.",
+        "num_comm": 0,
+        "title": "Divide and Conquer",
+        "doc": "",
+        "author": "halder",
+        "like_articles": "",
+        "tag": "divide conquer",
+        "likes": 0,
+        "key": true,
+        "date": "2015-04-15T19:48:48.899Z"
+    },
+    "model": "Article.article",
+    "pk": 28
+},
+{
+    "fields": {
+        "body": "The basic breadth-first search algorithm is given below. At some point during the\r\ncourse of a traversal, every node in the graph changes state from undiscovered to\r\ndiscovered. In a breadth-first search of an undirected graph, we assign a direction\r\nto each edge, from the discoverer u to the discovered v. We thus denote u to be the\r\nparent of v. Since each node has exactly one parent, except for the root, this defines\r\na tree on the vertices of the graph. This tree, illustrated in Figure 5.9, defines a\r\nshortest path from the root to every other node in the tree. This property makes\r\nbreadth-first search very useful in shortest path problems.\r\nBFS(G, s)\r\nfor each vertex u \u2208 V [G] \u2212 {s} do\r\nstate[u] = \u201cundiscovered\u201d\r\np[u] = nil, i.e. no parent is in the BFS tree\r\nstate[s] = \u201cdiscovered\u201d\r\np[s] = nil\r\nQ = {s}\r\nwhile Q = \u2205 do\r\nu = dequeue[Q]\r\nprocess vertex u as desired\r\nfor each v \u2208 Adj[u] do\r\nprocess edge (u, v) as desired\r\nif state[v] = \u201cundiscovered\u201d then\r\nstate[v] = \u201cdiscovered\u201d\r\np[v] = u\r\nenqueue[Q, v]\r\nstate[u] = \u201cprocessed\u201d",
+        "num_comm": 0,
+        "title": "Breadth-First Search",
+        "doc": "",
+        "author": "halder",
+        "like_articles": "",
+        "tag": "bfs",
+        "likes": 0,
+        "key": true,
+        "date": "2015-04-15T19:49:27.791Z"
+    },
+    "model": "Article.article",
+    "pk": 29
+},
+{
+    "fields": {
+        "body": "There are two primary graph traversal algorithms: breadth-first search (BFS) and\r\ndepth-first search (DFS). For certain problems, it makes absolutely no difference\r\nwhich you use, but in others the distinction is crucial.\r\nThe difference between BFS and DFS results is in the order in which they\r\nexplore vertices. This order depends completely upon the container data structure\r\nused to store the discovered but not processed vertices.\r\n\u2022 Queue \u2013 By storing the vertices in a first-in, first-out (FIFO) queue, we\r\nexplore the oldest unexplored vertices first. Thus our explorations radiate\r\nout slowly from the starting vertex, defining a breadth-first search.\r\n\u2022 Stack \u2013 By storing the vertices in a last-in, first-out (LIFO) stack, we explore\r\nthe vertices by lurching along a path, visiting a new neighbor if one is avail-\r\nable, and backing up only when we are surrounded by previously discovered\r\nvertices. Thus, our explorations quickly wander away from our starting point,\r\ndefining a depth-first search.",
+        "num_comm": 0,
+        "title": "Depth-First Search",
+        "doc": "",
+        "author": "halder",
+        "like_articles": "",
+        "tag": "dfs",
+        "likes": 0,
+        "key": true,
+        "date": "2015-04-15T19:49:57.615Z"
+    },
+    "model": "Article.article",
+    "pk": 30
+},
+{
+    "fields": {
+        "body": "A Sudoku craze has swept the world. Many newspapers now publish daily Sudoku\r\npuzzles, and millions of books about Sudoku have been sold. British Airways sent\r\na formal memo forbidding its cabin crews from doing Sudoku during takeoffs and\r\nlandings. Indeed, I have noticed plenty of Sudoku going on in the back of my\r\nalgorithms classes during lecture.\r\nWhat is Sudoku? In its most common form, it consists of a 9 \u00d7 9 grid filled with\r\nblanks and the digits 1 to 9. The puzzle is completed when every row, column, and\r\nsector (3 \u00d7 3 subproblems corresponding to the nine sectors of a tic-tac-toe puzzle)\r\ncontain the digits 1 through 9 with no deletions or repetition.",
+        "num_comm": 0,
+        "title": "Sudoku",
+        "doc": "assets/uploaded_files/1429127476_83_assign2.pdf",
+        "author": "halder",
+        "like_articles": "",
+        "tag": "sudoku",
+        "likes": 0,
+        "key": true,
+        "date": "2015-04-15T19:51:16.827Z"
+    },
+    "model": "Article.article",
+    "pk": 31
+},
+{
+    "fields": {
+        "body": "We have encountered several problems in this book for which we couldn\u2019t find any\r\nefficient algorithm. The theory of NP-completeness provides the tools needed to\r\nshow that all these problems are on some level really the same problem.\r\nThe key idea to demonstrating the hardness of a problem is that of a reduction,\r\nor translation, between two problems. The following allegory of NP-completeness\r\nmay help explain the idea. A bunch of kids take turns fighting each other in the\r\nschoolyard to prove how \u201ctough\u201d they are. Adam beats up Bill, who then beats up\r\nChuck. So who if any among them is \u201ctough?\u201d The truth is that there is no way\r\nto know without an external standard. If I told you that Chuck was in fact Chuck\r\nNorris, certified tough guy, you have to be impressed\u2014both Adam and Bill are at\r\nleast as tough as he is. On the other hand, suppose I tell you it is a kindergarten\r\nschool yard. No one would call me tough, but even I can take out Adam. This\r\nproves that none of the three of them should be called be tough. In this allegory,\r\neach fight represents a reduction. Chuck Norris takes on the role of satisfiability\u2014a\r\ncertifiably hard problem. The part of an inefficient algorithm with a possible shot\r\nat redemption is played by me.",
+        "num_comm": 0,
+        "title": "Problems and Reductions",
+        "doc": "",
+        "author": "sriparna",
+        "like_articles": "",
+        "tag": "problems reduction",
+        "likes": 0,
+        "key": true,
+        "date": "2015-04-15T19:52:43.051Z"
+    },
+    "model": "Article.article",
+    "pk": 32
+},
+{
+    "fields": {
+        "body": "Input description: An x \u00d7 y matrix A and a y \u00d7 z matrix B.\r\nProblem description: Compute the x \u00d7 z matrix A \u00d7 B.\r\nDiscussion: Matrix multiplication is a fundamental problem in linear algebra. Its\r\nmain significance for combinatorial algorithms is its equivalence to many other\r\nproblems, including transitive closure/reduction, parsing, solving linear systems,\r\nand matrix inversion. Thus, a faster algorithm for matrix multiplication implies\r\nfaster algorithms for all of these problems. Matrix multiplication arises in its own\r\nright in computing the results of such coordinate transformations as scaling, rota-\r\ntion, and translation for robotics and computer graphics.\r\nThe following tight algorithm computes the product of x \u00d7 y matrix A and y \u00d7 z\r\nmatrix B runs in O(xyz). Remember to first initialize M [i, j] to 0 for all 1 \u2264 i \u2264 x\r\nand i \u2264 j \u2264 z:\r\nfor i = 1 to x do\r\nfor j = 1 to z\r\nfor k = 1 to y\r\nM [i, j] = M [i, j] + A[i, k] \u00b7 A[k, j]\r\nAn implementation in C appears in Section 2.5.4 (page 45). This straightfor-\r\nward algorithm would seem to be tough to beat in practice. That said, observe\r\nthat the three loops can be arbitrarily permuted without changing the resulting\r\nanswer. Such a permutation will change the memory access patterns and thus how\r\neffectively the cache memory is used. One can expect a 10-20% variation in run\r\ntime among the six possible implementations, but could not confidently predict\r\nthe winner (typically ikj) without running it on your machine with your given\r\nmatrices.",
+        "num_comm": 0,
+        "title": "Matrix Multiplication",
+        "doc": "",
+        "author": "sriparna",
+        "like_articles": "",
+        "tag": "matrix multiplication",
+        "likes": 0,
+        "key": true,
+        "date": "2015-04-15T19:53:46.368Z"
+    },
+    "model": "Article.article",
+    "pk": 33
+},
+{
+    "fields": {
+        "body": "Input description: A directed acyclic graph G = (V, E), also known as a partial\r\norder or poset.\r\nProblem description: Find a linear ordering of the vertices of V such that for\r\neach edge (i, j) \u2208 E, vertex i is to the left of vertex j.\r\nDiscussion: Topological sorting arises as a subproblem in most algorithms on\r\ndirected acyclic graphs. Topological sorting orders the vertices and edges of a DAG\r\nin a simple and consistent way and hence plays the same role for DAGs that a\r\ndepth-first search does for general graphs.\r\nTopological sorting can be used to schedule tasks under precedence constraints.\r\nSuppose we have a set of tasks to do, but certain tasks have to be performed before\r\nother tasks. These precedence constraints form a directed acyclic graph, and any\r\ntopological sort (also known as a linear extension) defines an order to do these\r\ntasks such that each is performed only after all of its constraints are satisfied.",
+        "num_comm": 0,
+        "title": "Topological Sorting",
+        "doc": "",
+        "author": "sriparna",
+        "like_articles": "",
+        "tag": "topoogical",
+        "likes": 0,
+        "key": true,
+        "date": "2015-04-15T19:54:31.957Z"
+    },
+    "model": "Article.article",
+    "pk": 34
+},
+{
+    "fields": {
+        "body": "Input description: An edge-weighted graph G, with vertices s and t.\r\nProblem description: Find the shortest path from s to t in G.\r\nDiscussion: The problem of finding shortest paths in a graph has several applica-\r\ntions, some quite surprising:\r\n\u2022 The most obvious applications arise in transportation or communications,\r\nsuch as finding the best route to drive between Chicago and Phoenix or\r\nfiguring how to direct packets to a destination across a network.\r\n\u2022 Consider the task of partitioning a digitized image into regions containing\r\ndistinct objects\u2014a problem known as image segmentation. Separating lines\r\nare needed to carve the space into regions, but what path should these lines\r\ntake through the grid? We may want a line that relatively directly goes from\r\nx to y, but avoids cutting through object pixels as much as possible. This\r\ngrid of pixels can be modeled as a graph, with the cost of an edge reflecting\r\nthe color transitions between neighboring pixels. The shortest path from x\r\nto y in this weighted graph defines the best separating line.",
+        "num_comm": 0,
+        "title": "Shortest Path",
+        "doc": "",
+        "author": "sriparna",
+        "like_articles": "",
+        "tag": "shortest path",
+        "likes": 0,
+        "key": true,
+        "date": "2015-04-15T19:55:15.566Z"
+    },
+    "model": "Article.article",
+    "pk": 35
+},
+{
+    "fields": {
+        "body": "In this section, we describe several particularly comprehensive implementations\r\nof combinatorial algorithms, all of which are downloadable over the Internet. Al-\r\nthough these codes are mentioned in the relevant sections of the catalog, they are\r\nsubstantial enough to warrant further attention.\r\nA good algorithm designer does not reinvent the wheel, and a good programmer\r\ndoes not rewrite code that other people have written. Picasso put it best: \u201cGood\r\nartists borrow. Great artists steal.\u201d\r\nHowever, here is a word of caution about stealing. Many of the codes described\r\nin this book have been made available for research or educational use only. Com-\r\nmercial use may require a licensing arrangement with the author. I urge you to\r\nrespect this. Licensing terms from academic institutions are usually quite modest.\r\nThe recognition that industry is using a particular code is important to the au-\r\nthors, often more important than the money involved. This can lead to enhanced\r\nsupport or future releases of the software. Do the right thing and get a license.\r\nInformation about terms or whom to contact is usually available embedded within\r\nthe documentation, or available at the source\u2019s website.",
+        "num_comm": 0,
+        "title": "Software Systems",
+        "doc": "",
+        "author": "joydeep",
+        "like_articles": "",
+        "tag": "software systems",
+        "likes": 0,
+        "key": true,
+        "date": "2015-04-15T19:56:35.428Z"
+    },
+    "model": "Article.article",
+    "pk": 36
+},
+{
+    "fields": {
+        "body": "The best, worst, and average-case time complexities for any given algorithm are\r\nnumerical functions over the size of possible problem instances. However, it is very\r\ndifficult to work precisely with these functions, because they tend to:\r\n\u2022 Have too many bumps \u2013 An algorithm such as binary search typically runs\r\na bit faster for arrays of size exactly n = 2 k \u2212 1 (where k is an integer),\r\nbecause the array partitions work out nicely. This detail is not particularly\r\nsignificant, but it warns us that the exact time complexity function for any\r\nalgorithm is liable to be very complicated, with little up and down bumps as\r\nshown in Figure 2.2.\r\n\u2022 Require too much detail to specify precisely \u2013 Counting the exact number\r\nof RAM instructions executed in the worst case requires the algorithm be\r\nspecified to the detail of a complete computer program. Further, the precise\r\nanswer depends upon uninteresting coding details (e.g., did he use a case\r\nstatement or nested ifs?). Performing a precise worst-case analysis like\r\nT (n) = 12754n 2 + 4353n + 834 lg 2 n + 13546\r\nwould clearly be very difficult work, but provides us little extra information\r\nthan the observation that \u201cthe time grows quadratically with n.\u201d",
+        "num_comm": 0,
+        "title": "The Big Oh Notation",
+        "doc": "",
+        "author": "joydeep",
+        "like_articles": "",
+        "tag": "big oh",
+        "likes": 0,
+        "key": true,
+        "date": "2015-04-15T19:57:23.084Z"
+    },
+    "model": "Article.article",
+    "pk": 37
+},
+{
+    "fields": {
+        "body": "We use the term container to denote a data structure that permits storage and\r\nretrieval of data items independent of content. By contrast, dictionaries are abstract\r\ndata types that retrieve based on key values or content, and will be discussed in\r\nSection 3.3 (page 72).\r\nContainers are distinguished by the particular retrieval order they support. In\r\nthe two most important types of containers, this retrieval order depends on the\r\ninsertion order:\r\n\u2022 Stacks \u2013 Support retrieval by last-in, first-out (LIFO) order. Stacks are simple\r\nto implement and very efficient. For this reason, stacks are probably the\r\nright container to use when retrieval order doesn\u2019t matter at all, such as\r\nwhen processing batch jobs. The put and get operations for stacks are usually\r\ncalled push and pop:",
+        "num_comm": 0,
+        "title": "Stacks and Queues",
+        "doc": "",
+        "author": "joydeep",
+        "like_articles": "",
+        "tag": "stack queue",
+        "likes": 0,
+        "key": true,
+        "date": "2015-04-15T19:58:14.174Z"
+    },
+    "model": "Article.article",
+    "pk": 38
+},
+{
+    "fields": {
+        "body": "Many algorithms process items in a specific order. For example, suppose you must\r\nschedule jobs according to their importance relative to other jobs. Scheduling thejobs requires sorting them by importance, and then evaluating them in this sorted\r\norder.\r\nPriority queues are data structures that provide more flexibility than simple\r\nsorting, because they allow new elements to enter a system at arbitrary intervals.\r\nIt is much more cost-effective to insert a new job into a priority queue than to\r\nre-sort everything on each such arrival.",
+        "num_comm": 0,
+        "title": "Priority Queues",
+        "doc": "",
+        "author": "joydeep",
+        "like_articles": "",
+        "tag": "priority",
+        "likes": 0,
+        "key": true,
+        "date": "2015-04-15T19:59:16.609Z"
+    },
+    "model": "Article.article",
+    "pk": 39
+},
+{
+    "fields": {
+        "body": "Hash tables are a very practical way to maintain a dictionary. They exploit the fact\r\nthat looking an item up in an array takes constant time once you have its index. A\r\nhash function is a mathematical function that maps keys to integers. We will use\r\nthe value of our hash function as an index into an array, and store our item at that\r\nposition.\r\nThe first step of the hash function is usually to map each key to a big integer.\r\nLet \u03b1 be the size of the alphabet on which a given string S is written. Let char(c)\r\nbe a function that maps each symbol of the alphabet to a unique integer from 0 to\r\n\u03b1 \u2212 1. The function\r\n|S|\u22121\r\n\u03b1 |S|\u2212(i+1) \u00d7 char(s i )\r\nH(S) =\r\ni=0\r\nmaps each string to a unique (but large) integer by treating the characters of the\r\nstring as \u201cdigits\u201d in a base-\u03b1 number system.\r\nThe result is unique identifier numbers, but they are so large they will quickly\r\nexceed the number of slots in our hash table (denoted by m). We must reduce this\r\nnumber to an integer between 0 and m\u22121, by taking the remainder of H(S) mod m.\r\nThis works on the same principle as a roulette wheel. The ball travels a long\r\ndistance around and around the circumference-m wheel H(S)/m times before\r\nsettling down to a random bin. If the table size is selected with enough finesse\r\n(ideally m is a large prime not too close to 2 i \u2212 1), the resulting hash values should\r\nbe fairly uniformly distributed.",
+        "num_comm": 0,
+        "title": "Hashing and Strings",
+        "doc": "",
+        "author": "Ashok",
+        "like_articles": "",
+        "tag": "hash strings",
+        "likes": 0,
+        "key": true,
+        "date": "2015-04-15T20:01:01.333Z"
+    },
+    "model": "Article.article",
+    "pk": 40
+},
+{
+    "fields": {
+        "body": "Recursive algorithms reduce large problems into smaller ones. A recursive approach\r\nto sorting involves partitioning the elements into two groups, sorting each of the\r\nsmaller problems recursively, and then interleaving the two sorted lists to totally\r\norder the elements. This algorithm is called mergesort, recognizing the importance\r\nof the interleaving operation:\r\nMergesort(A[1, n])\r\nMerge( MergeSort(A[1, n/2 ]), MergeSort(A[ n/2 + 1, n]) )\r\nThe basis case of the recursion occurs when the subarray to be sorted consists\r\nof a single element, so no rearrangement is possible. A trace of the execution ofmergesort is given in Figure 4.4. Picture the action as it happens during an in-\r\norder traversal of the top tree, with the array-state transformations reported in\r\nthe bottom, reflected tree",
+        "num_comm": 0,
+        "title": "Mergesort: Sorting by Divide-and-Conquer",
+        "doc": "",
+        "author": "Ashok",
+        "like_articles": "",
+        "tag": "mergesort",
+        "likes": 0,
+        "key": true,
+        "date": "2015-04-15T20:01:47.718Z"
+    },
+    "model": "Article.article",
+    "pk": 41
+},
+{
+    "fields": {
+        "body": "As algorithm design paradigms go, a depth-first search isn\u2019t particularly intimidat-\r\ning. It is surprisingly subtle, however meaning that its correctness requires getting\r\ndetails right.\r\nThe correctness of a DFS-based algorithm depends upon specifics of exactly\r\nwhen we process the edges and vertices. We can process vertex v either before we\r\nhave traversed any of the outgoing edges from v (process vertex early()) or after\r\nwe have finished processing all of them (process vertex late()). Sometimes we\r\nwill take special actions at both times, say process vertex early() to initialize a\r\nvertex-specific data structure, which will be modified on edge-processing operations\r\nand then analyzed afterwards using process vertex late().\r\nIn undirected graphs, each edge (x, y) sits in the adjacency lists of vertex x\r\nand y. Thus there are two potential times to process each edge (x, y), namely when\r\nexploring x and when exploring y. The labeling of edges as tree edges or back edges\r\noccurs during the first time the edge is explored. This first time we see an edge is\r\nusually a logical time to do edge-specific processing. Sometimes, we may want to\r\ntake different action the second time we see an edge.",
+        "num_comm": 0,
+        "title": "Applications of Depth-First Search",
+        "doc": "",
+        "author": "Ashok",
+        "like_articles": "",
+        "tag": "dfs application",
+        "likes": 0,
+        "key": true,
+        "date": "2015-04-15T20:02:28.574Z"
+    },
+    "model": "Article.article",
+    "pk": 42
+},
+{
+    "fields": {
+        "body": "Edge-weighted graphs can be interpreted as a network of pipes, where the weight\r\nof edge (i, j) determines the capacity of the pipe. Capacities can be thought of as a\r\nfunction of the cross-sectional area of the pipe. A wide pipe might be able to carry\r\n10 units of flow in a given time, where as a narrower pipe might only carry 5 units.\r\nThe network flow problem asks for the maximum amount of flow which can be sent\r\nfrom vertices s to t in a given weighted graph G while respecting the maximum\r\ncapacities of each pipe.",
+        "num_comm": 0,
+        "title": "Network Flows and Bipartite Matching",
+        "doc": "",
+        "author": "Ashok",
+        "like_articles": "",
+        "tag": "network flows bipartite",
+        "likes": 0,
+        "key": true,
+        "date": "2015-04-15T20:03:22.577Z"
+    },
+    "model": "Article.article",
+    "pk": 43
+},
+{
+    "fields": {
+        "body": "While the network flow problem is of independent interest, its primary importance\r\nis in to solving other important graph problems. A classic example is bipartite\r\nmatching. A matching in a graph G = (V, E) is a subset of edges E \u2282 E such that\r\nno two edges of E share a vertex. A matching pairs off certain vertices such that\r\nevery vertex is in, at most, one such pair, as shown in Figure 6.12.\r\nGraph G is bipartite or two-colorable if the vertices can be divided into two\r\nsets, L and R, such that all edges in G have one vertex in L and one vertex in\r\nR. Many naturally defined graphs are bipartite. For example, certain vertices may\r\nrepresent jobs to be done and the remaining vertices represent people who can\r\npotentially do them. The existence of edge (j, p) means that job j can be done by\r\nperson p. Or let certain vertices represent boys and certain vertices represent girls,\r\nwith edges representing compatible pairs. Matchings in these graphs have natural\r\ninterpretations as job assignments or as marriages, and are the focus of Section\r\n15.6 (page 498).\r\nThe largest bipartite matching can be readily found using network flow. Create\r\na source node s that is connected to every vertex in L by an edge of weight 1.\r\nCreate a sink node t and connect it to every vertex in R by an edge of weight 1.\r\nFinally, assign each edge in the bipartite graph G a weight of 1. Now, the maximum\r\npossible flow from s to t defines the largest matching in G. Certainly we can find a\r\nflow as large as the matching by using only the matching edges and their source-\r\nto-sink connections. Further, there can be no greater possible flow. How can we\r\never hope to get more than one flow unit through any vertex?",
+        "num_comm": 0,
+        "title": "Bipartite Matching",
+        "doc": "",
+        "author": "Ashok",
+        "like_articles": "",
+        "tag": "bipartite",
+        "likes": 0,
+        "key": true,
+        "date": "2015-04-15T20:03:56.251Z"
+    },
+    "model": "Article.article",
+    "pk": 44
+},
+{
+    "fields": {
+        "body": "Two heads are better than one, and more generally, n heads are better than n \u2212 1.\r\nParallel processing is becoming more important with the advent of cluster com-\r\nputing and multicore processors. It seems like the easy way out of hard problems.\r\nIndeed, sometimes, for some problems, parallel algorithms are the most effective\r\nsolution. High-resolution, real-time graphics applications must render thirty frames\r\nper second for realistic animation. Assigning each frame to a distinct processor, or\r\ndividing each image into regions assigned to different processors, might be the only\r\nway to get the job done in time. Large systems of linear equations for scientific\r\napplications are routinely solved in parallel.\r\nHowever, there are several pitfalls associated with parallel algorithms that you\r\nshould be aware of:\r\n\u2022 There is often a small upper bound on the potential win \u2013 Suppose that you\r\nhave access to twenty processors that can be devoted exclusively to your\r\njob. Potentially, these could be used to speed up the fastest sequential pro-\r\ngram by up to a factor of twenty. That is nice, but greater performance gains\r\nmaybe possible by finding a better sequential algorithm. Your time spent par-\r\nallelizing a code might well be better spent enhancing the sequential version.\r\nPerformance-tuning tools such as profilers are better developed for sequential\r\nmachines than for parallel models.\r\n\u2022 Speedup means nothing \u2013 Suppose my parallel program runs 20 times faster\r\non a 20-processor machine than it does on one processor. That\u2019s great, isn\u2019tit? If you always get linear speedup and have an arbitrary number of proces-\r\nsors, you will eventually beat any sequential algorithm. However, a carefully\r\ndesigned sequential algorithm can often beat an easily-parallelized code run-\r\nning on a typical parallel machine. The one-processor parallel version of your\r\ncode is likely to be a crummy sequential algorithm, so measuring speedup\r\ntypically provides an unfair test of the benefits of parallelism.",
+        "num_comm": 0,
+        "title": "Parallel Algorithms",
+        "doc": "",
+        "author": "somanath",
+        "like_articles": "",
+        "tag": "parallel algorithms",
+        "likes": 0,
+        "key": true,
+        "date": "2015-04-15T20:06:17.239Z"
+    },
+    "model": "Article.article",
+    "pk": 45
+},
+{
+    "fields": {
+        "body": "The Fibonacci numbers were originally defined by the Italian mathematician Fi-\r\nbonacci in the thirteenth century to model the growth of rabbit populations. Rab-\r\nbits breed, well, like rabbits. Fibonacci surmised that the number of pairs of rabbits\r\nborn in a given year is equal to the number of pairs of rabbits born in each of the\r\ntwo previous years, starting from one pair of rabbits in the first year. To count the\r\nnumber of rabbits born in the nth year, he defined the recurrence relation:\r\nF n = F n\u22121 + F n\u22122\r\nwith basis cases F 0 = 0 and F 1 = 1. Thus, F 2 = 1, F 3 = 2, and the series continues\r\n{3, 5, 8, 13, 21, 34, 55, 89, 144, . . .}. As it turns out, Fibonacci\u2019s formula didn\u2019t do a\r\nvery good job of counting rabbits, but it does have a host of interesting properties.\r\nSince they are defined by a recursive formula, it is easy to write a recursive\r\nprogram to compute the nth Fibonacci number. A recursive function algorithm\r\nwritten in C looks like this:\r\nlong fib_r(int n)\r\n{\r\nif (n == 0) return(0);\r\nif (n == 1) return(1);\r\nreturn(fib_r(n-1) + fib_r(n-2));\r\n}",
+        "num_comm": 0,
+        "title": "Fibonacci Numbers by Recursion",
+        "doc": "",
+        "author": "somanath",
+        "like_articles": "",
+        "tag": "fibonacci recursion",
+        "likes": 0,
+        "key": true,
+        "date": "2015-04-15T20:06:57.256Z"
+    },
+    "model": "Article.article",
+    "pk": 46
+},
+{
+    "fields": {
+        "body": "Suppose that three workers are given the task of scanning through a shelf of books\r\nin search of a given piece of information. To get the job done fairly and efficiently,\r\nthe books are to be partitioned among the three workers. To avoid the need to\r\nrearrange the books or separate them into piles, it is simplest to divide the shelf\r\ninto three regions and assign each region to one worker.\r\nBut what is the fairest way to divide up the shelf? If all books are the same\r\nlength, the job is pretty easy. Just partition the books into equal-sized regions,\r\n100 100 100 | 100 100 100 | 100 100 100\r\nso that everyone has 300 pages to deal with.\r\nBut what if the books are not the same length? Suppose we used the same\r\npartition when the book sizes looked like this:\r\n100 200 300 | 400 500 600 | 700 800 900\r\nI, would volunteer to take the first section, with only 600 pages to scan, instead of\r\nthe last one, with 2,400 pages. The fairest possible partition for this shelf would be\r\n100 200 300 400 500 | 600 700 | 800 900\r\nwhere the largest job is only 1,700 pages and the smallest job 1,300.\r\nIn general, we have the following problem:\r\nProblem: Integer Partition without Rearrangement\r\nInput: An arrangement S of nonnegative numbers {s 1 , . . . , s n } and an integer k.\r\nOutput: Partition S into k or fewer ranges, to minimize the maximum sum over all\r\nthe ranges, without reordering any of the numbers.\r\nThis so-called linear partition problem arises often in parallel process. We seek\r\nto balance the work done across processors to minimize the total elapsed run time.",
+        "num_comm": 0,
+        "title": "The Partition Problem",
+        "doc": "",
+        "author": "somanath",
+        "like_articles": "",
+        "tag": "partition",
+        "likes": 0,
+        "key": true,
+        "date": "2015-04-15T20:07:37.177Z"
+    },
+    "model": "Article.article",
+    "pk": 47
+},
+{
+    "fields": {
+        "body": "Dynamic programming doesn\u2019t always work. It is important to see why it can fail,\r\nto help avoid traps leading to incorrect or inefficient algorithms.\r\nOur algorithmic poster child will once again be the traveling salesman, where\r\nwe seek the shortest tour visiting all the cities in a graph. We will limit attention\r\nhere to an interesting special case:Problem: Longest Simple Path\r\nInput: A weighted graph G, with specified start and end vertices s and t.\r\nOutput: What is the most expensive path from s to t that does not visit any vertex\r\nmore than once?\r\nThis problem differs from TSP in two quite unimportant ways. First, it asks\r\nfor a path instead of a closed tour. This difference isn\u2019t substantial: we get a closed\r\ntour by simply including the edge (t, s). Second, it asks for the most expensive\r\npath instead of the least expensive tour. Again this difference isn\u2019t very significant:\r\nit encourages us to visit as many vertices as possible (ideally all), just as in TSP.\r\nThe big word in the problem statement is simple, meaning we are not allowed to\r\nvisit any vertex more than once.\r\nFor unweighted graphs (where each edge has cost 1), the longest possible simple\r\npath from s to t is n \u2212 1. Finding such Hamiltonian paths (if they exist) is an\r\nimportant graph problem, discussed in Section 16.5 (page 538).",
+        "num_comm": 0,
+        "title": "Limitations of Dynamic Programming: TSP",
+        "doc": "",
+        "author": "somanath",
+        "like_articles": "",
+        "tag": "dp",
+        "likes": 0,
+        "key": true,
+        "date": "2015-04-15T20:08:17.258Z"
+    },
+    "model": "Article.article",
+    "pk": 48
+},
+{
+    "fields": {
+        "body": "The reductions in the previous section demonstrate transformations between pairs\r\nof problems for which efficient algorithms exist. However, we are mainly concerned\r\nwith using reductions to prove hardness, by showing that a fast algorithm for\r\nBandersnatch would imply one that cannot exist for Bo-billy.For now, I want you to trust me when I say that Hamiltonian cycle and vertex\r\ncover are hard problems. The entire picture (presented in Figure 9.2) will become\r\nclear by the end of the chapter.",
+        "num_comm": 0,
+        "title": "Elementary Hardness Reductions",
+        "doc": "",
+        "author": "somanath",
+        "like_articles": "",
+        "tag": "elementary hardness",
+        "likes": 0,
+        "key": true,
+        "date": "2015-04-15T20:09:05.922Z"
+    },
+    "model": "Article.article",
+    "pk": 49
+},
+{
+    "fields": {
+        "body": "The Hamiltonian cycle problem is one of the most famous in graph theory. It seeks\r\na tour that visits each vertex of a given graph exactly once. It has a long history\r\nand many applications, as discussed in Section 16.5. Formally, it is defined as:\r\nProblem: Hamiltonian Cycle\r\nInput: An unweighted graph G.\r\nOutput: Does there exist a simple tour that visits each vertex of G without repeti-\r\ntion?\r\nHamiltonian cycle has some obvious similarity to the traveling salesman prob-\r\nlem. Both problems seek a tour that visits each vertex exactly once. There are also\r\ndifferences between the two problems. TSP works on weighted graphs, while Hamil-\r\ntonian cycle works on unweighted graphs. The following reduction from Hamilto-\r\nnian cycle to traveling salesman shows that the similarities are greater than the\r\ndifferences:\r\nHamiltonianCycle(G = (V, E))\r\nConstruct a complete weighted graph G = (V , E ) where V = V .\r\nn = |V |\r\nfor i = 1 to n do\r\nfor j = 1 to n do\r\nif (i, j) \u2208 E then w(i, j) = 1 else w(i, j) = 2\r\nReturn the answer to Traveling-Salesman-Decision-Problem(G , n).\r\nThe actual reduction is quite simple, with the translation from unweighted to\r\nweighted graph easily performed in O(n 2 ) time. Further, this translation is designed\r\nto ensure that the answers of the two problems will be identical. If the graph G\r\nhas a Hamiltonian cycle {v 1 , . . . , v n }, then this exact same tour will correspond to\r\nn edges in E , each with weight 1. This gives a TSP tour in G of weight exactlyn. If G does not have a Hamiltonian cycle, then there can be no such TSP tour in\r\nG because the only way to get a tour of cost n in G would be to use only edges of\r\nweight 1, which implies a Hamiltonian cycle in G.\r\nThis reduction is both efficient and truth preserving. A fast algorithm for TSP\r\nwould imply a fast algorithm for Hamiltonian cycle, while a hardness proof for\r\nHamiltonian cycle would imply that TSP is hard. Since the latter is the case, this\r\nreduction shows that TSP is hard, at least as hard as the Hamiltonian cycle.",
+        "num_comm": 0,
+        "title": "Hamiltonian Cycle",
+        "doc": "",
+        "author": "sudhan",
+        "like_articles": "",
+        "tag": "hamiltonian",
+        "likes": 0,
+        "key": true,
+        "date": "2015-04-15T20:16:17.851Z"
+    },
+    "model": "Article.article",
+    "pk": 50
+},
+{
+    "fields": {
+        "body": "For the practical person, demonstrating that a problem is NP-complete is never\r\nthe end of the line. Presumably, there was a reason why you wanted to solve it\r\nin the first place. That application will not go away when told that there is no\r\npolynomial-time algorithm. You still seek a program that solves the problem of\r\ninterest. All you know is that you won\u2019t find one that quickly solves the problem\r\nto optimality in the worst case. You still have three options:\r\n\u2022 Algorithms fast in the average case \u2013 Examples of such algorithms include\r\nbacktracking algorithms with substantial pruning.\r\n\u2022 Heuristics \u2013 Heuristic methods like simulated annealing or greedy approaches\r\ncan be used to quickly find a solution with no guarantee that it will be the\r\nbest one.\r\n\u2022 Approximation algorithms \u2013 The theory of NP-completeness only stipulates\r\nthat it is hard to get close to the answer. With clever, problem-specific heuris-\r\ntics, we can probably get close to the optimal answer on all possible instances.",
+        "num_comm": 0,
+        "title": "Dealing with NP-complete Problems",
+        "doc": "",
+        "author": "sudhan",
+        "like_articles": "",
+        "tag": "NP-complete ",
+        "likes": 0,
+        "key": true,
+        "date": "2015-04-15T20:16:56.969Z"
+    },
+    "model": "Article.article",
+    "pk": 51
+},
+{
+    "fields": {
+        "body": "Input description: A reference string S.\r\nProblem description: Build a data structure to quickly find all places where an\r\narbitrary query string q occurs in S.\r\nDiscussion: Suffix trees and arrays are phenomenally useful data structures for\r\nsolving string problems elegantly and efficiently. Proper use of suffix trees often\r\nspeeds up string processing algorithms from O(n 2 ) to linear time\u2014likely the an-\r\nswer. Indeed, suffix trees are the hero of the war story reported in Section 3.9 (page\r\n94).\r\nIn its simplest instantiation, a suffix tree is simply a trie of the n suffixes of an\r\nn-character string S. A trie is a tree structure, where each edge represents one\r\ncharacter, and the root represents the null string. Thus, each path from the root\r\nrepresents a string, described by the characters labeling the edges traversed. Any\r\nfinite set of words defines a trie, and two words with common prefixes branch off\r\nfrom each other at the first distinguishing character. Each leaf denotes the end of\r\na string. Figure 12.1 illustrates a simple trie.\r\nTries are useful for testing whether a given query string q is in the set. We\r\ntraverse the trie from the root along branches defined by successive characters of\r\nq. If a branch does not exist in the trie, then q cannot be in the set of strings.\r\nOtherwise we find q in |q| character comparisons regardless of how many strings\r\nare in the trie. Tries are very simple to build (repeatedly insert new strings) and\r\nvery fast to search, although they can be expensive in terms of memory.",
+        "num_comm": 0,
+        "title": "Suffix Trees and Arrays",
+        "doc": "",
+        "author": "sudhan",
+        "like_articles": "",
+        "tag": "suffix trees arrays",
+        "likes": 0,
+        "key": true,
+        "date": "2015-04-15T20:17:35.184Z"
+    },
+    "model": "Article.article",
+    "pk": 52
+},
+{
+    "fields": {
+        "body": "Input description: A graph G.\r\nProblem description: Represent the graph G using a flexible, efficient data struc-\r\nture.\r\nDiscussion: The two basic data structures for representing graphs are adjacency\r\nmatrices and adjacency lists. Full descriptions of these data structures appear in\r\nSection 5.2 (page 151), along with an implementation of adjacency lists in C. In\r\ngeneral, for most things, adjacency lists are the way to go.\r\nThe issues in deciding which data structure to use include:\r\n\u2022 How big will your graph be? \u2013 How many vertices will it have, both typically\r\nand in the worse case? Ditto for the number of edges? Graphs with 1,000\r\nvertices imply adjacency matrices with 1,000,000 entries. This seems too be\r\nthe boundary of reality. Adjacency matrices make sense only for small or very\r\ndense graphs.\r\n\u2022 How dense will your graph be? \u2013 If your graph is very dense, meaning that a\r\nlarge fraction of the vertex pairs define edges, there is probably no compelling\r\nreason to use adjacency lists. You will be doomed to using \u0398(n 2 ) space any-\r\nway. Indeed, for complete graphs, matrices will be more concise due to the\r\nelimination of pointers.\r\n\u2022 Which algorithms will you be implementing? \u2013 Certain algorithms are more\r\nnatural on adjacency matrices (such as all-pairs shortest path) and others\r\nfavor adjacency lists (such as most DFS-based algorithms). Adjacency ma-\r\ntrices win for algorithms that repeatedly ask, \u201cIs (i, j) in G?\u201d However, most\r\ngraph algorithms can be designed to eliminate such queries.\r\n\u2022 Will you be modifying the graph over the course of your application? \u2013\r\nEfficient static graph implementations can be used when no edge inser-\r\ntion/deletion operations will done following initial construction. Indeed, morecommon than modifying the topology of the graph is modifying the attributes\r\nof a vertex or edge of the graph, such as size, weight, label, or color. Attributes\r\nare best handled as extra fields in the vertex or edge records of adjacency\r\nlists.",
+        "num_comm": 0,
+        "title": "Graph Data Structures",
+        "doc": "",
+        "author": "sudhan",
+        "like_articles": "",
+        "tag": "graph ds",
+        "likes": 0,
+        "key": true,
+        "date": "2015-04-15T20:19:27.453Z"
+    },
+    "model": "Article.article",
+    "pk": 53
+},
+{
+    "fields": {
+        "body": "Input description: An m\u00d7n matrix A and an m\u00d71 vector b, together representing\r\nm linear equations on n variables.\r\nProblem description: What is the vector x such that A \u00b7 x = b?\r\nDiscussion: The need to solve linear systems arises in an estimated 75% of all\r\nscientific computing problems [DB74]. For example, applying Kirchhoff\u2019s laws to\r\nanalyze electrical circuits generates a system of equations\u2014the solution of which\r\nputs currents through each branch of the circuit. Analysis of the forces acting on\r\na mechanical truss generates a similar set of equations. Even finding the point of\r\nintersection between two or more lines reduces to solving a small linear system.\r\nNot all systems of equations have solutions. Consider the equations 2x + 3y = 5\r\nand 2x + 3y = 6. Some systems of equations have multiple solutions, such as\r\n2x + 3y = 5 and 4x + 6y = 10. Such degenerate systems of equations are called\r\nsingular, and they can be recognized by testing whether the determinant of the\r\ncoefficient matrix is zero.\r\nSolving linear systems is a problem of such scientific and commercial importance\r\nthat excellent codes are readily available. There is no good reason to implement\r\nyour own solver, even though the basic algorithm (Gaussian elimination) is one you\r\nlearned in high school. This is especially true when working with large systems.\r\nGaussian elimination is based on the observation that the solution to a system\r\nof linear equations is invariant under scaling ( if x = y, then 2x = 2y) and addingequations (the solution to x = y and w = z is the same as the solution to x = y\r\nand x + w = y + z). Gaussian elimination scales and adds equations to eliminate\r\neach variable from all but one equation, leaving the system in such a state that the\r\nsolution can be read off from the equations.",
+        "num_comm": 0,
+        "title": "Solving Linear Equations",
+        "doc": "",
+        "author": "sudhan",
+        "like_articles": "",
+        "tag": "linear",
+        "likes": 0,
+        "key": true,
+        "date": "2015-04-15T20:20:21.541Z"
+    },
+    "model": "Article.article",
+    "pk": 54
+},
+{
+    "fields": {
+        "body": "Input description: Nothing, or perhaps a seed.\r\nProblem description: Generate a sequence of random integers.\r\nDiscussion: Random numbers have an enormous variety of interesting and im-\r\nportant applications. They form the foundation of simulated annealing and related\r\nheuristic optimization techniques. Discrete event simulations run on streams of ran-\r\ndom numbers, and are used to model everything from transportation systems to\r\ncasino poker. Passwords and cryptographic keys are typically generated randomly.\r\nRandomized algorithms for graph and geometric problems are revolutionizing these\r\nfields and establishing randomization as one of the fundamental ideas of computer\r\nscience.\r\nUnfortunately, generating random numbers looks a lot easier than it really is.\r\nIndeed, it is fundamentally impossible to produce truly random numbers on any\r\ndeterministic device. Von Neumann [Neu63] said it best: \u201cAnyone who considers\r\narithmetical methods of producing random digits is, of course, in a state of sin.\u201d\r\nThe best we can hope for are pseudorandom numbers, a stream of numbers that\r\nappear as if they were generated randomly.\r\nThere can be serious consequences to using a bad random-number generator.\r\nIn one famous case, a Web browser\u2019s encryption scheme was broken with the dis-\r\ncovery that the seeds of its random-number generator employed too few random\r\nbits [GW96]. Simulation accuracy is regularly compromised or invalidated by poor\r\nrandom number generation. This is an area where people shouldn\u2019t mess around,\r\nbut they do",
+        "num_comm": 0,
+        "title": "Random Number Generation",
+        "doc": "",
+        "author": "sriparna",
+        "like_articles": "",
+        "tag": "random",
+        "likes": 0,
+        "key": true,
+        "date": "2015-04-15T20:22:48.518Z"
+    },
+    "model": "Article.article",
+    "pk": 55
+},
+{
+    "fields": {
+        "body": "Input description: A set of n numbers or keys, and an integer k.\r\nProblem description: Find the key smaller than exactly k of the n keys.\r\nDiscussion: Median finding is an essential problem in statistics, where it provides\r\na more robust notion of average than the mean. The mean wealth of people who\r\nhave published research papers on sorting is significantly affected by the presence\r\nof one William Gates [GP79], although his effect on the median wealth is merely\r\nto cancel out one starving graduate student.\r\nMedian finding is a special case of the more general selection problem, which\r\nasks for the kth element in sorted order. Selection arises in several applications:\r\n\u2022 Filtering outlying elements \u2013 In dealing with noisy data, it is usually a good\r\nidea to throw out (say) the 10% largest and smallest values. Selection can\r\nbe used to identify the items defining the 10 th and 90 th percentiles, and the\r\noutliers then filtered out by comparing each item to the two selected bounds.\r\n\u2022 Identifying the most promising candidates \u2013 In a computer chess program, we\r\nmight quickly evaluate all possible next moves, and then decide to study the\r\ntop 25% more carefully. Selection followed by filtering is the way to go.\r\n\u2022 Deciles and related divisions \u2013 A useful way to present income distribution in\r\na population is to chart the salary of the people ranked at regular intervals,\r\nsay exactly at the 10th percentile, 20th percentile, etc. Computing these\r\nvalues is simply selection on the appropriate position ranks.\r\n\u2022 Order statistics \u2013 Particularly interesting special cases of selection include\r\nfinding the smallest element (k = 1), the largest element (k = n), and the\r\nmedian element (k = n/2).",
+        "num_comm": 0,
+        "title": "Median and Selection",
+        "doc": "",
+        "author": "sriparna",
+        "like_articles": "",
+        "tag": "median selection",
+        "likes": 0,
+        "key": true,
+        "date": "2015-04-15T20:23:33.608Z"
+    },
+    "model": "Article.article",
+    "pk": 56
+},
+{
+    "fields": {
+        "body": "Input description: An integer n.\r\nProblem description: Generate (1) all, or (2) a random, or (3) the next permu-\r\ntation of length n.\r\nDiscussion: A permutation describes an arrangement or ordering of items. Many\r\nalgorithmic problems in this catalog seek the best way to order a set of objects,\r\nincluding traveling salesman (the least-cost order to visit n cities), bandwidth (order\r\nthe vertices of a graph on a line so as to minimize the length of the longest edge),\r\nand graph isomorphism (order the vertices of one graph so that it is identical to\r\nanother). Any algorithm for solving such problems exactly must construct a series\r\nof permutations along the way.\r\nThere are n! permutations of n items. This grows so quickly that you can\u2019t\r\nreally expect to generate all permutations for n > 12, since 12! = 479,001,600.\r\nNumbers like these should cool the ardor of anyone interested in exhaustive search\r\nand help explain the importance of generating random permutations.\r\nFundamental to any permutation-generation algorithm is a notion of order, the\r\nsequence in which the permutations are constructed from first to last. The most\r\nnatural generation order is lexicographic, the sequence they would appear if they\r\nwere sorted numerically. Lexicographic order for n = 3 is {1, 2, 3}, {1, 3, 2}, {2, 1, 3},\r\n{2, 3, 1}, {3, 1, 2}, and finally {3, 2, 1}. Although lexicographic order is aesthetically\r\npleasing, there is often no particular advantage to using it. For example, if you are\r\nsearching through a collection of files, it does not matter whether the filenames are\r\nencountered in sorted order, so long as you eventually search through all of them.\r\nIndeed, nonlexicographic orders lead to faster and simpler permutation generation\r\nalgorithms.",
+        "num_comm": 0,
+        "title": "Generating Permutations",
+        "doc": "",
+        "author": "sriparna",
+        "like_articles": "",
+        "tag": "permutation",
+        "likes": 0,
+        "key": true,
+        "date": "2015-04-15T20:24:12.163Z"
+    },
+    "model": "Article.article",
+    "pk": 57
+},
+{
+    "fields": {
+        "body": "Input description: Parameters describing the desired graph, including the num-\r\nber of vertices n, and the number of edges m or edge probability p.\r\nProblem description: Generate (1) all, or (2) a random, or (3) the next graph\r\nsatisfying the parameters.\r\nDiscussion: Graph generation typically arises in constructing test data for pro-\r\ngrams. Perhaps you have two different programs that solve the same problem, and\r\nyou want to see which one is faster or make sure that they always give the same\r\nanswer. Another application is experimental graph theory, verifying whether a par-\r\nticular property is true for all graphs or how often it is true. It is much easier to\r\nbelieve the four-color theorem after you have demonstrated four colorings for all\r\nplanar graphs on 15 vertices.\r\nA different application of graph generation arises in network design. Suppose\r\nyou need to design a network linking ten machines using as few cables as possible,\r\nsuch that this network can survive up to two vertex failures. One approach is to\r\ntest all the networks with a given number of edges until you find one that will\r\nwork. For larger graphs, heuristic approaches like simulated annealing will likely\r\nbe necessary.Many factors complicate the problem of generating graphs. First, make sure\r\nyou know exactly what types of graphs you want to generate. Figure 5.2 on page\r\n147 illustrates several important properties of graphs. For purposes of generation,\r\nthe most important questions are:Do I want labeled or unlabeled graphs? \u2013 The issue here is whether the names\r\nof the vertices matter in deciding whether two graphs are the same. In gener-\r\nating labeled graphs, we seek to construct all possible labelings of all possible\r\ngraph topologies. In generating unlabeled graphs, we seek only one represen-\r\ntative for each topology and ignore labelings. For example, there are only\r\ntwo connected unlabeled graphs on three vertices\u2014a triangle and a simple\r\npath. However, there are four connected labeled graphs on three vertices\u2014\r\none triangle and three 3-vertex paths, each distinguished by the name of their\r\ncentral vertex. In general, labeled graphs are much easier to generate. How-\r\never, there are so many more of them that you quickly get swamped with\r\nisomorphic copies of the same few graphs.\r\n\u2022 Do I want directed or undirected graphs? \u2013 Most natural generation algo-\r\nrithms generate undirected graphs. These can be turned into directed graphs\r\nby flipping coins to orient the edges. Any graph can be oriented to be directed\r\nand acyclic (i.e. , a DAG) by randomly permuting the vertices on a line and\r\naiming each edge from left to right. With all such ideas, careful thought\r\nmust be given to decide whether you are generating all graphs uniformly at\r\nrandom, and how much this matters to you.",
+        "num_comm": 0,
+        "title": "Generating Graphs",
+        "doc": "",
+        "author": "sriparna",
+        "like_articles": "",
+        "tag": "generating graphs ",
+        "likes": 0,
+        "key": true,
+        "date": "2015-04-15T20:25:15.387Z"
+    },
+    "model": "Article.article",
+    "pk": 58
+},
+{
+    "fields": {
+        "body": "Input description: A directed or undirected graph G.\r\nProblem description: Identify the different pieces or components of G, where\r\nvertices x and y are members of different components if no path exists from x to\r\ny in G.\r\nDiscussion: The connected components of a graph represent, in grossest terms,\r\nthe pieces of the graph. Two vertices are in the same component of G if and only\r\nif there exists some path between them.\r\nFinding connected components is at the heart of many graph applications. For\r\nexample, consider the problem of identifying natural clusters in a set of items. We\r\nrepresent each item by a vertex and add an edge between each pair of items deemed\r\n\u201csimilar.\u201d The connected components of this graph correspond to different classes\r\nof items.\r\nTesting whether a graph is connected is an essential preprocessing step for every\r\ngraph algorithm. Subtle, hard-to-detect bugs often result when an algorithm is run\r\nonly on one component of a disconnected graph. Connectivity tests are so quick\r\nand easy that you should always verify the integrity of your input graph, even when\r\nyou know for certain that it has to be connected.\r\nTesting the connectivity of any undirected graph is a job for either depth-first or\r\nbreadth-first search, as discussed in Section 5 (page 145). Which one you choose\r\ndoesn\u2019t really matter. Both traversals initialize the component-number field for\r\neach vertex to 0, and then start the search for component 1 from vertex v 1 . As\r\neach vertex is discovered, the value of this field is set to the current componentnumber. When the initial traversal ends, the component number is incremented,\r\nand the search begins again from the first vertex whose component-number remains\r\n0. Properly implemented using adjacency lists (as is done in Section 5.7.1 (page\r\n166)) this runs in O(n + m) time.",
+        "num_comm": 0,
+        "title": "Connected Components",
+        "doc": "",
+        "author": "sriparna",
+        "like_articles": "",
+        "tag": "connected components",
+        "likes": 0,
+        "key": true,
+        "date": "2015-04-15T20:26:05.151Z"
+    },
+    "model": "Article.article",
+    "pk": 59
+},
+{
+    "fields": {
+        "body": "Input description: A directed graph G = (V, E).\r\nProblem description: For transitive closure, construct a graph G = (V, E ) with\r\nedge (i, j) \u2208 E iff there is a directed path from i to j in G. For transitive reduction,\r\nconstruct a small graph G = (V, E ) with a directed path from i to j in G iff there\r\nis a directed path from i to j in G.\r\nDiscussion: Transitive closure can be thought of as establishing a data structure\r\nthat makes it possible to solve reachability questions (can I get to x from y?)\r\nefficiently. After constructing the transitive closure, all reachability queries can be\r\nanswered in constant time by simply reporting the appropriate matrix entry.\r\nTransitive closure is fundamental in propagating the consequences of modified\r\nattributes of a graph G. For example, consider the graph underlying any spread-\r\nsheet model whose vertices are cells and have an edge from cell i to cell j if the\r\nresult of cell j depends on cell i. When the value of a given cell is modified, the\r\nvalues of all reachable cells must also be updated. The identity of these cells is re-\r\nvealed by the transitive closure of G. Many database problems reduce to computing\r\ntransitive closures, for analogous reasons.\r\nThere are three basic algorithms for computing transitive closure:\r\n\u2022 The simplest algorithm just performs a breadth-first or depth-first search\r\nfrom each vertex and keeps track of all vertices encountered. Doing n such\r\ntraversals gives an O(n(n + m)) algorithm, which degenerates to cubic time if\r\nthe graph is dense. This algorithm is easily implemented, runs well on sparse\r\ngraphs, and is likely the right answer for your application.\r\n\u2022 Warshall\u2019s algorithm constructs transitive closures in O(n 3 ) using a simple,\r\nslick algorithm that is identical to Floyd\u2019s all-pairs shortest-path algorithmof Section 15.4 (page 489). If we are interested only in the transitive closure,\r\nand not the length of the resulting paths, we can reduce storage by retaining\r\nk\r\n= 1 iff j is reachable from i\r\nonly one bit for each matrix element. Thus, D ij\r\nusing only vertices 1, . . . , k as intermediates.",
+        "num_comm": 1,
+        "title": "Transitive Closure and Reduction",
+        "doc": "",
+        "author": "samrat",
+        "like_articles": "60",
+        "tag": "closure reduction",
+        "likes": 1,
+        "key": true,
+        "date": "2015-04-15T20:27:07.793Z"
+    },
+    "model": "Article.article",
+    "pk": 60
+},
+{
+    "fields": {
+        "body": "Input description: A graph G. Optionally, a pair of vertices s and t.\r\nProblem description: What is the smallest subset of vertices (or edges) whose\r\ndeletion will disconnect G? Or which will separate s from t?\r\nDiscussion: Graph connectivity often arises in problems related to network relia-\r\nbility. In the context of telephone networks, the vertex connectivity is the smallest\r\nnumber of switching stations that a terrorist must bomb in order to separate the\r\nnetwork\u2014i.e. , prevent two unbombed stations from talking to each other. The edge\r\nconnectivity is the smallest number of wires that need to be cut to accomplish the\r\nsame objective. One well-placed bomb or snipping the right pair of cables suffices\r\nto disconnect the above network.\r\nThe edge (vertex) connectivity of a graph G is the smallest number of edge\r\n(vertex) deletions sufficient to disconnect G. There is a close relationship between\r\nthe two quantities. The vertex connectivity is always less than or equal to the\r\nedge connectivity, since deleting one vertex from each edge in a cut set succeeds\r\nin disconnecting the graph. But smaller vertex subsets may be possible. The mini-\r\nmum vertex degree is an upper bound for both edge and vertex connectivity, since\r\ndeleting all its neighbors (or cutting the edges to all its neighbors) disconnects the\r\ngraph into one big and one single-vertex component.\r\nSeveral connectivity problems prove to be of interest:\r\n\u2022 Is the graph already disconnected? \u2013 The simplest connectivity problem is test-\r\ning whether the graph is in fact connected. A simple depth-first or breadth-\r\nfirst search suffices to identify all connected components in linear time, as\r\ndiscussed in Section 15.1 (page 477). For directed graphs, the issue is whether\r\nthe graph is strongly connected, meaning there is a directed path between any\r\npair of vertices. In a weakly connected graph, there may exist paths to nodes\r\nfrom which there is no way to return.",
+        "num_comm": 0,
+        "title": "Edge and Vertex Connectivity",
+        "doc": "",
+        "author": "samrat",
+        "like_articles": "",
+        "tag": "edge vertex connectivity",
+        "likes": 0,
+        "key": true,
+        "date": "2015-04-15T20:27:54.281Z"
+    },
+    "model": "Article.article",
+    "pk": 61
+},
+{
+    "fields": {
+        "comment": "Hello",
+        "date": "2015-04-08T19:59:23.534Z",
+        "parent_article_id": "7",
+        "author": "himanshu"
+    },
+    "model": "Article.comments",
+    "pk": 1
+},
+{
+    "fields": {
+        "comment": "Yippee",
+        "date": "2015-04-08T19:59:23.534Z",
+        "parent_article_id": "7",
+        "author": "himanshu"
+    },
+    "model": "Article.comments",
+    "pk": 2
+},
+{
+    "fields": {
+        "comment": "Software working",
+        "date": "2015-04-08T20:12:20.366Z",
+        "parent_article_id": "7",
+        "author": "himanshu"
+    },
+    "model": "Article.comments",
+    "pk": 3
+},
+{
+    "fields": {
+        "comment": "software working",
+        "date": "2015-04-08T20:12:48.511Z",
+        "parent_article_id": "7",
+        "author": "himanshu"
+    },
+    "model": "Article.comments",
+    "pk": 4
+},
+{
+    "fields": {
+        "comment": "hello",
+        "date": "2015-04-08T20:15:17.775Z",
+        "parent_article_id": "7",
+        "author": "himanshu"
+    },
+    "model": "Article.comments",
+    "pk": 5
+},
+{
+    "fields": {
+        "comment": "lskdlskldd",
+        "date": "2015-04-09T05:17:45.810Z",
+        "parent_article_id": "3",
+        "author": "himanshu"
+    },
+    "model": "Article.comments",
+    "pk": 6
+},
+{
+    "fields": {
+        "comment": "lskdlskdlk\r\n",
+        "date": "2015-04-09T05:17:54.571Z",
+        "parent_article_id": "3",
+        "author": "himanshu"
+    },
+    "model": "Article.comments",
+    "pk": 7
+},
+{
+    "fields": {
+        "comment": "a;ls;als;la;s\r\nwewe\r\nwewe\r\nwewe",
+        "date": "2015-04-09T05:18:06.230Z",
+        "parent_article_id": "3",
+        "author": "himanshu"
+    },
+    "model": "Article.comments",
+    "pk": 8
+},
+{
+    "fields": {
+        "comment": "sjjjjjjjjj  lskldklsdkl lksldklsk llkswdklk lsldksldklk     lklklklklk\r\ns\r\nd\r\ns\r\ndd\r\n\r\nsd",
+        "date": "2015-04-09T05:18:21.070Z",
+        "parent_article_id": "3",
+        "author": "himanshu"
+    },
+    "model": "Article.comments",
+    "pk": 9
+},
+{
+    "fields": {
+        "comment": "Hello",
+        "date": "2015-04-15T10:01:03.168Z",
+        "parent_article_id": "9",
+        "author": "shubham"
+    },
+    "model": "Article.comments",
+    "pk": 10
+},
+{
+    "fields": {
+        "comment": "Hiii",
+        "date": "2015-04-15T10:10:04.679Z",
+        "parent_article_id": "9",
+        "author": "shubham"
+    },
+    "model": "Article.comments",
+    "pk": 11
+},
+{
+    "fields": {
+        "comment": "Can it be better?",
+        "date": "2015-04-16T03:11:22.496Z",
+        "parent_article_id": "60",
+        "author": "halder"
+    },
+    "model": "Article.comments",
+    "pk": 12
+}
+]

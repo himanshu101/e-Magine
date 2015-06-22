@@ -1,0 +1,390 @@
+<html>
+	<head>
+  <script src='../../static/frontend/js/d3.min.js'></script>
+  <script src="../../static/frontend/js/jquery-1.11.2.min.js"></script>
+  <script src='../../static/frontend/js/const.js'></script>
+	<script src="../../static/frontend/js/graph.js"></script>
+	<script src="../../static/frontend/js/animation.js"></script>
+	<link rel="stylesheet" type="text/css" href="../../static/frontend/css/graph/animation.css"/>
+	<link rel="stylesheet" type="text/css" href="../../static/frontend/bootstrap/css/bootstrap.css"/>
+  <script src="../../static/frontend/bootstrap/js/bootstrap.min.js"></script>
+		<meta charset='utf-8'>
+    <title>e-Magine:Kruskal</title>
+	</head>
+	<body>
+    <script>
+var color = ["blue","red","black"];
+			var graph = {
+  "nodes":[
+    {"name":"23","group":1,"visited": 0,"adj":[],"color":"blue","d":1000},
+    {"name":"42","group":2,"visited": 0,"adj":[],"color":"blue","d":1000},
+    {"name":"11","group":1,"visited": 0,"adj":[],"color":"blue","d":1000},
+    {"name":"21","group":3,"visited": 0,"adj":[],"color":"blue","d":1000},
+    {"name":"10","group":4,"visited": 0,"adj":[],"color":"blue","d":1000},
+    {"name":"8","group":4,"visited": 0,"adj":[],"color":"blue","d":1000},
+    {"name":"33","group":4,"visited": 0,"adj":[],"color":"blue","d":1000},
+    {"name":"44","group":4,"visited": 0,"adj":[],"color":"blue","d":1000},
+  ],
+  "links":[
+    {"source":0,"target":1,"color":"blue","w":3},
+    {"source":1,"target":2,"color":"blue","w":5},
+    {"source":2,"target":3,"color":"blue","w":2},
+    {"source":3,"target":5,"color":"blue","w":7},
+    {"source":5,"target":4,"color":"blue","w":8},
+    {"source":4,"target":7,"color":"blue","w":3},
+    {"source":5,"target":6,"color":"blue","w":9},
+    {"source":6,"target":7,"color":"blue","w":11},
+  ]
+};
+			var g = new G.Graph (graph.nodes,graph.links,1);
+			//g.generateAdjacency();
+			function init(g){
+				for ( var e in g.edges ) {
+					var edge = g.edges[e];
+					edge.opacity = 0;
+          edge.stroke = edgecolori
+				}
+			}
+			function makeSet ( node ) {
+				node.paren = node;
+				node.rank = 0;
+			}
+			function findSet ( node ) {
+				var n = node;
+				while ( n.paren != n ) {
+					n = n.paren;
+				}
+				return n;
+			}
+			function union ( n1, n2 ) {
+				if( n1.rank > n2.rank ) {
+					n2 = findSet( n2 );
+					n2.paren = n1;
+				} else {
+					n1 = findSet( n1 );
+					n1.paren = n2;
+				}
+			}
+			function kruskal( g ) {
+				g.sortEdges();
+				for ( var v in g.nodes ) {
+					var vertex = g.nodes[v];
+					makeSet( vertex );
+				}
+				for ( var e in g.edges ) {
+					var edge = g.edges[e];
+					var u = edge.source;
+					var v = edge.target;
+					//console.log(u);
+					if( findSet( u ) != findSet( v ) ) {
+						union( u,v );
+						g.animation.anim.push([{"node":edge,val:"opacity","src":0,"dest":1}]);
+            g.animation.anim.push([{"node":u,val:"color","src":nodecolori,"dest":nodecolorf}]);
+            g.animation.anim.push([{"node":v,val:"color","src":nodecolori,"dest":nodecolorf}]);
+					}
+				}
+			}
+			init(g);
+		var width = 840,
+		height = 580;
+    var svg;
+    function setup(g) {
+      var width = 840,
+      height = 580;
+      svg = d3.select('body').append('svg')
+      .attr('width', width)
+      .attr('height', height);
+      var force = d3.layout.force()
+      .size([width, height])
+      .linkDistance(linkdistance)
+      .charge(-350)
+      .nodes(g.nodes).links(g.edges)
+      /*var link = svg.selectAll('.link')
+      .data(g.edges)
+      .enter().append('line')
+      .attr('class', 'link');*/
+      svg.append("svg:defs").selectAll("marker")
+      .data(["end"])      // Different link/path types can be defined here
+      .enter().append("svg:marker")    // This section adds in the arrows
+      .attr("id", String)
+      .attr("viewBox", "0 -5 10 10")
+      .attr("refX", 28)
+      .attr("refY", 0)
+      .attr("markerWidth", markerdim)
+      .attr("markerHeight", markerdim)
+      .attr("orient", "auto")
+      .append("svg:path")
+      .attr("d", "M0,-5L10,0L0,5");
+
+      var link = svg.selectAll(".link")
+      .data(g.edges)
+      .enter()
+      .append('g')
+      .attr('class','link')
+      var path=svg.selectAll('.link').append('path');
+      path.attr({'d': function(d) {return 'M '+d.source.x+' '+d.source.y+' L '+ d.target.x +' '+d.target.y},
+        'class':'edgepath',
+        'stroke':function(d,i){return d.stroke},
+        'opacity':function(d){return d.opacity},
+        'marker-end': 'url(#end)',
+        'id':function(d,i) {return 'edgepath'+i}});
+
+      var edgelabels=link.append('text')
+          .style("pointer-events", "none")
+          .attr({'class':'edgelabel',
+          'id':function(d,i){return 'edgelabel'+i},
+          'dx':50,
+          'dy':0,
+          'font-size':18,
+          'opacity':function(d){return d.opacity},
+          'stroke':function(d,i){return d.stroke}});
+
+      edgelabels.append('textPath')
+          .attr('xlink:href',function(d,i) {return '#edgepath'+i})
+          .style("pointer-events", "none")
+          .text(function(d,i){return d.w});
+
+      var node = svg.selectAll('.node')
+          .data(g.nodes)
+          .enter().append('svg')
+          .attr('class','node');
+          node.append("circle")
+          .attr("r", nodesize)
+          .style("fill", function (d) {
+          return d.color;});
+      node.append("text")
+        .attr("dx", -3)
+        .attr("dy", ".35em")
+        .text(function(d) { return d.name })
+        .style("stroke", "orange");
+
+        force.on('end', function() {
+
+        // When this function executes, the force layout
+        // calculations have concluded. The layout will
+        // have set various properties in our nodes and
+        // links objects that we can use to position them
+        // within the SVG container.
+
+        // First let's reposition the nodes. As the force
+        // layout runs it updates the `x` and `y` properties
+        // that define where the node should be centered.
+        // To move the node, we set the appropriate SVG
+        // attributes to their new values. We also have to
+        // give the node a non-zero radius so that it's visible
+        // in the container.
+
+        d3.selectAll("circle").attr("r",nodesize).attr("cx", function (d) {
+          return d.x;
+        })
+              .attr("cy", function (d) {
+              return d.y;
+          });
+
+          // We also need to update positions of the links.
+          // For those elements, the force layout sets the
+          // `source` and `target` properties, specifying
+          // `x` and `y` values in each case.
+
+          /*link.attr('x1', function(d) { return d.source.x; })
+              .attr('y1', function(d) { return d.source.y; })
+              .attr('x2', function(d) { return d.target.x; })
+              .attr('y2', function(d) { return d.target.y; });*/
+           link.selectAll('path').attr('d',function(d){return 'M '+d.source.x+' '+d.source.y+' L '+ d.target.x +' '+d.target.y})
+           .attr('marker-end', 'url(#end)');
+              //update();
+      });
+
+      force.on("tick",function(){
+        link.selectAll('path').attr('d',function(d){return 'M '+d.source.x+' '+d.source.y+' L '+ d.target.x +' '+d.target.y});
+        d3.selectAll("circle").attr("cx", function (d) {
+            return d.x;
+        })
+            .attr("cy", function (d) {
+            return d.y;
+        });
+        d3.selectAll("text").attr("x", function (d) {
+            return d.x;
+        })
+            .attr("y", function (d) {
+            return d.y;
+        });
+      });
+          force.start();
+    }
+  function update(){
+    var node = svg.selectAll('.node')
+    .data(g.nodes);
+    var link = svg.selectAll('.link')
+    .data(g.edges);
+    node.selectAll("circle")
+    .style("fill", function(d) { return d.color; });
+    link.selectAll('path')
+    .attr({'opacity':function(d,i){return d.opacity}});
+
+    link.selectAll('text')
+    .attr({'class':'edgelabel',
+               'opacity':function(d,i){return d.opacity}
+           });
+  }
+		setup(g);
+		function startAnim(){
+      g.generateAdjacency();
+  g.sortEdges();
+  kruskal(g);
+  g.animation.startAnimation(update,1000);
+  console.log(g.edges[0]);
+}
+function stopAnim() {
+  g.animation.stopAnimation();
+}
+function next() {
+  g.animation.next(update);
+}
+function prev() {
+  g.animation.prev(update);
+}
+function resume() {
+  g.animation.startAnimation(update,1000);
+}
+function initialize(){
+  //g = new G.Graph(graph.nodes,graph.links,1);
+  init(g);
+  g.animation.resetAnimation();
+  update();
+}
+function restart(){
+  initialize();
+  kruskal(g);
+  init(g);
+  g.animation.startAnimation(update,1000);
+}
+function download( url ) {
+  //console.log(graph.nodes);
+  var nodes,links;
+  d3.select("body").select("svg").remove();
+  graph = $.getJSON(url,function(data){
+    graph = data;
+    nodes = data.nodes;
+    links = data.links;
+    //console.log(data.nodes);
+    //console.log(data.links);
+    //console.log(nodes);
+    g = new G.Graph(nodes,links);
+    setup(g);
+    initialize();
+  });
+}
+function upload() {
+  d3.select("body").select("svg").remove();
+  g = new G.Graph(graph.nodes,graph.links,1);
+  setup(g);
+  initialize();
+}
+function load(){
+  $.getJSON( "ajax/test.json", function( data ) {
+  console.log(data);
+});
+}
+    </script>
+    <!--<div class="controls">
+      <div>
+      <span class="glyphicon glyphicon-step-backward" onclick="prev();"></span>
+        <span class="glyphicon glyphicon-play-circle" onclick="startAnim();"></span>
+      <span class="glyphicon glyphicon-stop" onclick="stopAnim();"></span>
+        <span class="glyphicon glyphicon-step-forward" onclick="next();"></span>
+        <span class="glyphicon glyphicon-refresh" onclick="restart();"></span>
+        <span class="glyphicon glyphicon-file" onclick="upload();"></span>
+        <input type="text" />
+      </div>
+    </div>-->
+    <nav class="navbar navbar-default navbar-fixed-top" style="background: #386db1">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="/articles/all/">
+    <img alt="Home" src="../../static/frontend/images/Home.png" data-toggle="popover" data-content="Home"/>
+    </a></li>
+    <li><a href="/front/">
+    <img alt="Algorithm Illustration" src="../../static/frontend/images/stats.png" data-toggle="popover" data-content="Algorithm Illustration"/>
+    </a></li>
+        <li>
+    <span class="glyphicon glyphicon-step-backward" id="prevbtn" onclick="prev();"></span>
+    </li>
+    <li>
+    <span class="glyphicon glyphicon-stop" id="refresh" onclick="stopAnim();" style="margin-right: 10px;"></span>
+    </li>
+    <li>
+    <span class="glyphicon glyphicon-play" id="refresh" onclick="startAnim();" style="margin-right: 10px;"></span>
+    </li>
+    <li>
+    <span class="glyphicon glyphicon-step-forward" id="nextbtn" onclick="next();" style="margin-right: 10px;"></span>
+    </li>
+    <li>
+    <span class="glyphicon glyphicon-refresh" id="refresh" onclick="restart();" style="margin-right: 10px;"></span>
+    </li>
+    <li>
+    <span class="glyphicon glyphicon-file" id="refresh" onclick="load();" style="margin-right: 10px;"></span>
+    </li>
+    <li>
+      <button type="button" class="btn btn-primary" onclick="download('/fetch/file1')" style="margin-top: 15px;margin-left: 10px;">Input 1</button>
+    </li>
+    <li>
+      <button type="button" class="btn btn-primary" onclick="download('/fetch/file2')" style="margin-top: 15px;margin-left: 10px;">Input 2</button>
+    </li>
+    <li>
+      <button type="button" class="btn btn-primary" onclick="download('/fetch/file3')" style="margin-top: 15px;margin-left: 10px;">Input 3</button>
+    </li>
+    <li>
+      <button type="button" class="btn btn-primary" onclick="download('/fetch/file4')" style="margin-top: 15px;margin-left: 10px;">Input 4</button>
+    </li>
+    <li>
+      <button type="button" class="btn btn-primary" onclick="download('/fetch/file5')" style="margin-top: 15px;margin-left: 10px;">Input 5</button>
+    </li>
+  </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+      <img alt="Edit" src="../../static/frontend/images/edit_user.png"/>
+      <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+           {% if user_permission == 0 %}
+                <li><a href="/add_user/">Manage Users</a></li>
+                <li><a href="/myposts/all/">My Posts</a></li>
+                <li><a href="/articles/">Create an Article</a></li>
+            {% endif %}
+            {% if user_permission == 1 %}
+                <li><a href="/myposts/all/">My Posts</a></li>
+                <li><a href="/articles/">Create an Article</a></li>
+            {% endif %}
+            {% if user_permission >= 0%}    
+                <li><a href="/edit/">Edit Profile</a></li>
+            {% endif %}
+            <li class="divider"></li>   
+            <li><a href="/logout/">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<div class="code">
+    <p id="quickComments">Kruskal's Algorithm for growing MST</p>
+      <pre><code style="color:#ffffff;">
+  <span>MST-KRUSKAL(G,w)</span>
+  <span>  A = &#8709;</span>
+  <span>    foreach vertex v &#8712; G.V</span>
+  <span>      MAKE-SET(v)</span>
+  <span>  sort the edges of G.E into nondecreasing order by weight w</span>
+  <span>  for each edge(u,v) &#8712; G.E taken in non-decreasing order by weight</span>
+  <span>    if FIND-SET(u) &#8800; FIND-SET(v)</span>
+  <span>      A = A &#8746; {(u,v)}</span>
+  <span>      UNION(u,v)</span>
+  <span>   return A</span>
+  </code></pre>
+    </div>
+    </body>
+</html>

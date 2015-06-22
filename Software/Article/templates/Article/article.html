@@ -1,0 +1,19 @@
+{% extends "Software/base.html" %}
+
+{% block sidebar %}
+<ul>
+	<li><a href="/articles/all">Articles</a></li>
+</ul>
+{% endblock %}
+
+<h1>{{ article.title }}</h1>
+<p>{{ article.body }}</p>
+<p>{{ article.likes }} people liked this article</a></p>
+<p><a href="/articles/like/{{ article.id}}">Like</a></p>
+
+<h2>Comments</h2>
+{% for c in article.comment_set.all %}
+<p>{{c.name}} : {{c.body}}</p>
+<p><a href="/articles/add_comment/{{ article.id }}">Add Comment</a></p>
+
+{% endblock %}

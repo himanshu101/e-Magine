@@ -1,0 +1,87 @@
+<html style="height: 100%; width: 100%;">
+<head>
+	<meta charset="utf-8"> 
+	<title>Welcome to e-MIS</title>
+	<link rel="stylesheet" type="text/css" href="../../static/frontend/stylesheets/normalize.css"/>
+	<link type="text/css" rel="stylesheet" href="../../static/frontend/bootstrap/css/bootstrap.css">
+	<script src="../../static/frontend/js/jquery-2.0.0.min.js"></script>
+	<script src="../../static/frontend/bootstrap/js/bootstrap.js"></script>
+	<link rel="stylesheet" type="text/css" href="../../static/frontend/stylesheets/forcss.css">
+</head>
+<body style="background: linear-gradient(#386db1,#4f8ec4);background-repeat: no-repeat;">
+	<img src="../../static/frontend/images/iitp_logo.png" alt="IIT Patna" style="position:absolute;height:82px;left: 15px;top: 1px;">
+	<p style="position:absolute;font-family: Cambria,Georgia,serif; font-size: 30px;color: #e6e6e6; left: 100px; top: 23px">Indian Institute of Technology Patna</p>
+	<a style="color: #e6e6e6;position:absolute;left: 950px;top: 27px; font-size: 25px;font-family: Goudy Old Style,Garamond,Big Caslon,Times New Roman,serif;">About Us</a>
+	<button type="button" class="btn btn-default btn-lg" style="position:absolute;right: 55px;top: 25px;" onclick="go()">
+      <span class="glyphicon glyphicon-send"></span> Guest Login >
+    </button>
+	<div class="container" style="position:absolute;width: 100%;height: 1px;background: #cdcdcd;top: 90px;"></div>
+	
+	<div class="container" style="margin-left: auto;margin-right: auto;width: 85%;margin-top: 190px;">
+		<div class="row">
+		<div class="col-sm-7">
+		<div class="form-group">
+		<div class="row">
+		<img src="../../static/frontend/images/share.png" alt="Share Edu" class="col-sm-3">
+		<p style="font-family: Cambria,Georgia,serif; font-size: 30px; font-style: normal;color: #ffffff; line-height:150px;">Share Educational Articles</p>
+		</div>
+		</div>
+		<div class="row">
+		<img src="../../static/frontend/images/graph.png" alt="Graph Edu" class="col-sm-3">
+	    <p style="font-family: Cambria,Georgia,serif; font-size: 30px; font-style: normal;color: #ffffff; line-height:150px;">Interactive Algorithm Illustration</p>
+		</div>
+		</div>
+		<div class="container col-sm-5" style="background: #ffffff;border-radius: 25px; border: 2px solid #cdcdcd; margin-top: 4%; padding: 5px;">
+		<ul class="nav nav-tabs">
+			<li role="presentation" class="active"><a href="#login" aria-controls="login" role="tab" data-toggle="tab">Login</a></li>
+			<li role="presentation"><a href="#forgotpass"  aria-controls="forgotpass" role="tab" data-toggle="tab">Forgot Password</a></li>
+		</ul>
+		<div class="tab-content">
+			<div role="tabpanel" class="tab-pane active" id="login">
+				<form class="login-form" action="" method="post">
+					<div class="signin">
+						<div class="input-group">
+							<div class="input-group-addon icon-user"><span class="glyphicon glyphicon-user"></span></div>
+							<input class="form-control input-lg" name="userName" placeholder="Username" type="text" required="required" id="user_name"/>
+						</div>
+						<div class="input-group">
+							<div class="input-group-addon icon-lock"><span class="glyphicon glyphicon-lock"></span></div>
+							<input class="form-control input-lg" name="userPassword" placeholder="Password" type="password" required="required" id="user_pass"/>
+						</div>
+						<!--<a href="#"><div class="own-login">Login</div></a>-->
+						<br>
+						<input type="submit" class="btn btn-primary btn-block" value="Sign In" name="login"></input>
+					</div>
+				</form>
+			</div>
+			<div role="tabpanel" class="tab-pane" id="forgotpass">
+				<div role="tabpanel" class="tab-pane active" id="login">
+					<form class="forgot-pass" action="" method="post">
+						<div class="signin">
+							<div class="input-group">
+								<div class="input-group-addon icon-user"><span class="glyphicon glyphicon-user"></span></div>
+								<input class="form-control input-lg" name="forgot_username" placeholder="Username"/>
+							</div>
+							
+							<div class="input-group">
+								<div class="input-group-addon icon-user"><span class="glyphicon glyphicon-envelope"></span></div>
+								<input class="form-control input-lg" name="email" placeholder="E-mail"/>
+							</div>
+							<!--<a href="#"><div class="own-pass">Forgot Password?</div></a>-->
+							<br>
+						<input type="submit" class="btn btn-danger btn-block" value="Forgot Password" name="forgot"></input>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	function go () {
+		window.location.href = '/guest/'
+	}
+</script>
+</body>	
+</html>

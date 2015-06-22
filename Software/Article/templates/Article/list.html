@@ -1,0 +1,149 @@
+{% extends "Article/header.html" %}
+{% block content %}
+</script>
+<div style="clear:both"></div>
+<div id="navcontainer">
+<ul id="search-results" role="listbox">
+
+</ul>
+</div>
+
+<form action="" id="numPost" name="post" style="position: fixed; right: 3%;">{% csrf_token %}
+	<p class="lead">View Posts : <select id="dis" name="number" size="1" onChange="go()">
+		<option value="5">5</option>
+		<option value="10">10</option>
+		<option value="15">15</option>
+		<option value="20">20</option>
+		</select>
+	</p>
+</form>
+
+    <div id="main">
+        <!-- Posts  -->
+        <ul>
+        <script>
+        	$(document).ready(function(){
+        		$('#search').keyup(function(){
+        			$.ajax({
+            			type: "POST",
+            			url: "/search/",
+            			data: { 
+                			'search_text' : $('#search').val(),
+                			'csrfmiddlewaretoken' : $("input[name=csrfmiddlewaretoken]").val()
+            			},
+            			success: searchSuccess,
+            			dataType: 'html',
+        			});
+        		});
+        	});
+        	$('body').not('.suggestions').click(function(){
+        		$('.suggestions').hide();
+        	})
+        	function go(){
+				str = document.post.number.options[document.post.number.selectedIndex].value;
+				window.location.href = '/temp/'+str;
+			}
+			$("select option[value={{num}}]").attr("selected","selected");
+			
+        	function searchSuccess(data, textStatus, jqXHR){
+    			//$('#search-results').html(data);
+    			$jdata = $(data);
+    			//console.log($jdata.find('li'));
+    			$('.suggestions ul').html(data);
+    			$('.suggestions').show();
+			}
+/*
+			function loadPage(){
+
+				var num = document.getElementById('pageNumber').value;
+				window.location.href = "/page="+num+"/pages/";
+			}
+*/
+			/*function loadPosts(){
+
+				var num1 = document.getElementById('postNumber').value;
+				{{ posts.paginator.num_pages }} = num1;
+				alert(4);
+			}*/
+        </script>
+	
+            {% for post in posts.object_list %}
+			
+			<div class="container" style="width: 55%;margin-left: 210px;margin-top: 20px; background: #ffffff;border-radius:10px;">
+			<h3 style="color: #33b5e5;">{{post.title}}</h2>
+			<div class="row">
+				<div class="group1 col-sm-6 col-md-6">
+					<span class="glyphicon glyphicon-pencil"></span>{{post.author}}
+				</div>
+				<div class="group2 col-sm-6 col-md-6">
+					<span class="glyphicon glyphicon-time" style="margin-right: 2px;"></span>{{post.date}}
+				</div>
+			<br>
+			</div>
+			<hr>
+			<p class="pst{{post.id}} lead" id="bdy">{{post.body}}</p>
+			<hr>
+			<div class="row" style="padding-bottom: 10px;">
+				<div class="group1 col-sm-6 col-md-6">
+						<span class="glyphicon glyphicon-comment" style="color: #33b5e5;"></span><a href="#">{{post.num_comm}}</a>
+						<span class="glyphicon glyphicon-thumbs-up" style="color: #33b5e5; padding-left: 5px;"></span><a href="#">{{post.likes}}</a>
+				</div>
+				<div class="group2 col-sm-6 col-md-6">
+						<a href="/load/{{post.id}}">Read More..</a>
+				</div>
+			</div>
+		</div>	
+		
+	            	<script>
+	            		$(function() {
+
+							var showChar = 60, showtxt = "more", hidetxt = "less";
+							var str4 = '.pst' + {{ post.id }};
+							$(str4).each(function() {
+								var content = $(this).text();
+								if (content.length > showChar) {
+									var con = content.substr(0, showChar);
+									var hcon = content.substr(showChar, content.length - showChar);
+									var txt= con +  '<span class="dots">...</span><span class="morecontent"><span>' + hcon + '</span>&nbsp;&nbsp;<a href="" class="moretxt' + {{ post.id }} + '">' + showtxt + '</a></span>';
+									$(this).html(txt);
+									document.getElementById('bdy').style.width = '500px';
+									document.getElementById('bdy').style.display = 'block';
+								}
+							});
+							var str2 = '.moretxt' + {{ post.id }};
+							$(str2).click(function() {
+								if ($(this).hasClass("sample")) {
+									$(this).removeClass("sample");
+									$(this).text(showtxt);
+								} else {
+									$(this).addClass("sample");
+									$(this).text(hidetxt);
+								}
+								$(this).parent().prev().toggle();
+								$(this).prev().toggle();
+								return false;
+							});
+						});
+				
+
+					</script>
+				
+            {% endfor %}
+
+        </ul>
+
+	
+        <ul class="pagination col-sm-5">
+        	{% for item in array %}
+        		<li>
+        			<a href="/page={{item}}/pages/">{{item}}</a>
+        		</li>
+        	{% endfor %}
+        </ul>
+	     <div class="container">
+  			<ul id="pag">
+  			</ul>
+		</div>
+		<p style="text-align : center; background : #386db1;margin:0;font-size:16px;color:white">e-MAGINE  |  Developed @IIT-Patna  |  email : emis.group1@gmail.com</p>
+
+{% endblock %}

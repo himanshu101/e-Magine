@@ -1,0 +1,21 @@
+.code{
+		font-size:20px;	
+		position:fixed;
+		left:1%;
+		top:9%;
+		padding:0.7em;
+		font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+	}
+	.code p{
+		margin:2px;
+		background: rgb(217, 81, 60);
+		padding:0.4em;
+		border-radius:2px;
+		color: #ffffff;
+		font-family: Goudy Old Style,Garamond,Big Caslon,Times New Roman,serif;
+		font-size: 20px;
+	}
+	.code pre{
+		background:#33b5e5;
+		padding:0.9em;
+	}

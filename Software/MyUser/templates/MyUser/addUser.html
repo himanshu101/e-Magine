@@ -1,0 +1,181 @@
+{% extends "Article/header.html" %}
+{% block content %}
+<div style="clear:both"></div>
+<br>
+<br>
+<script src="../../static/frontend/js/jquery-2.1.3.min.js"></script>
+<script>
+function scorePassword(pass) {
+    var score = 0;
+    if (!pass)
+        return score;
+    if(pass.length < 8)
+	return -1; 	
+    // award every unique letter until 5 repetitions
+    var letters = new Object();
+    for (var i=0; i<pass.length; i++) {
+        letters[pass[i]] = (letters[pass[i]] || 0) + 1;
+        score += 5.0 / letters[pass[i]];
+    }
+
+    // bonus points for mixing it up
+    var variations = {
+        digits: /\d/.test(pass),
+        lower: /[a-z]/.test(pass),
+        upper: /[A-Z]/.test(pass),
+        nonWords: /\W/.test(pass),
+    }
+
+    variationCount = 0;
+    for (var check in variations) {
+        variationCount += (variations[check] == true) ? 1 : 0;
+    }
+    score += (variationCount - 1) * 10;
+
+    return parseInt(score);
+}
+
+function checkPassStrength(pass) {
+    var score = scorePassword(pass);
+    if(score == -1)
+	return "improper";	
+    if (score > 60)
+        return "strong";
+    if (score > 40)
+        return "good";
+    if (score >= 10)
+        return "weak";
+
+    return "";
+}
+
+$(document).ready(function() {
+    $("#progress").hide();
+    document.getElementById('change_password').disabled = true;	
+	{% if alert %}     
+	alert('{{alert}}');
+	{% endif %}	
+    $("#new_password").on("keypress keyup keydown", function() {
+        var pass = $(this).val();
+        var strength = checkPassStrength(pass);
+	if(strength == ""){
+		$("#progress").hide();
+		$("#error").show();	
+		document.getElementById('change_password').disabled = true;
+	}
+	else if(strength == "improper"){
+		$("#progress").hide();
+		$("#error").show();
+		document.getElementById('change_password').disabled = true;	
+	}
+	else if(strength == "weak"){
+		document.getElementById('change_password').disabled = false;
+		$("#progress").show();
+		$("#error").hide();	
+		$("#progress_bar").show();	
+		$("#progress_bar").text("Weak");		
+		$("#progress_bar").addClass("progress-bar-danger");
+		$("#progress_bar").removeClass("progress-bar-warning");
+		$("#progress_bar").css("width","33%");
+	}
+	else if(strength == "good"){
+		document.getElementById('change_password').disabled = false;
+		$("#error").hide();
+		$("#progress").show();
+		$("#progress_bar").text("Good");
+		$("#progress_bar").removeClass("progress-bar-danger");
+		$("#progress_bar").removeClass("progress-bar-warning");
+		$("#progress_bar").addClass("progress-bar-warning");
+		$("#progress_bar").css("width","66%");
+	}
+	else if(strength == "strong"){
+		document.getElementById('change_password').disabled = false;
+		$("#error").hide();
+		$("#progress").show();
+		$("#progress_bar").text("Strong");
+		$("#progress_bar").removeClass("progress-bar-warning");	
+		$("#progress_bar").addClass("progress-bar-success");	
+		$("#progress_bar").css("width","100%");
+	}
+    });
+});
+</script>
+{% if guest %}
+<div class="container">
+	<form class="form-horizontal" role="form" action="" method="post">
+		<div class="form-group">
+			<label class="control-label col-sm-2" for="userName">UserName:</label>
+				<div class="col-sm-5">
+					<input type="text" class="form-control" id="username" placeholder="Username" name="username" required="required">
+				</div>
+		</div>
+		<div class="form-group">
+			<label class="control-label col-sm-2" for="Email">Email:</label>
+				<div class="col-sm-5">
+					<input type="text" class="form-control" id="email" placeholder="Email" name="email" required="required">
+				</div>
+		</div>	
+		<div class="form-group">
+			<label class="control-label col-sm-2" for="college">Batch:</label>
+				<div class="col-sm-5">
+					<input type="text" class="form-control" id="college" placeholder="College" name="college" required="required">
+				</div>
+		</div>
+		<div class="form-group">
+			<label class="control-label col-sm-2" for="password">Password:</label>
+				<div class="col-sm-5">
+					<input type="password" class="form-control" id="password" placeholder="Password" name="password" required="required">
+				</div>
+		</div>
+		<label class="radio-inline" style="margin-left: 18%; font-weight: bold;">
+		<input type="radio" name="optradio1">Admin
+		</label>
+		<label class="radio-inline" style="font-weight: bold;">
+		<input type="radio" name="optradio2">Faculty
+		</label>
+		<label class="radio-inline" style="font-weight: bold;">
+		<input type="radio" name="optradio3">Student
+		</label>
+		<div class="form-group">
+				<div class="col-sm-5">
+				</div>
+				
+		</div>
+				<input type="submit" name="save" value="SAVE" class="btn btn-primary col-sm-offset-2"></input>	
+	</form>
+</div>
+{% else %}
+<br><h4>Sorry.. you are not authorized to add a user.</h4>
+{% endif %}
+<br>
+
+	<br>
+	{% if error %}
+	<div class="alert alert-danger" role="alert">{{error}}</div>
+	{% endif %}
+	{% if success %}
+	<div class="alert alert-success" role="alert">{{success}}</div>
+	{% endif %}		
+	<br>
+<script type="text/javascript">
+		function clicked() {
+			if (confirm('Are you sure?')){
+				return true;	
+			}
+			else{
+				return false;
+			}
+		}
+
+		function getRadioValue()
+				{
+						for (var i = 0; i < document.getElementsByName('optradio').length; i++)
+					{
+						if (document.getElementsByName('optradio')[i].checked)
+						{
+							return i;
+						}
+					}
+				}
+</script>
+{% endblock %}

@@ -1,0 +1,55 @@
+{% extends "Software/base.html" %}
+
+{% block sidebar %}
+<ul>
+	<li><a href = "/articles/all">Articles</a></li>
+	<li><a href = "/articles/create">Create Article</a></li>
+</ul>
+<h3>Search</h3>
+{% csrf_token %}
+<input type="text" id="search" name="search"/>
+<ul id="search_results">
+
+</ul>
+
+{% endblock %}
+
+{% block content %}
+
+<h2>Language is: {{language}}</h2>
+<h2>Session Language is:{{session_language}}</h2>
+<script src="http://code.jquery.com/jquery-1.8.2.js" type="text/javascript"></script>
+<script type="text/javascript">
+	$(function(){
+		$('#search').keyup(function(){
+			$.ajax({
+				type: "POST",
+				url: "/articles/search",
+				data: {
+					'search_text': $('#search').val(),
+					'csrfmiddlewaretoken': $("input[name=csrfmiddlewaretoken]").val()
+				},
+				success: searchSuccess,
+				dataType: 'html'
+			});   
+		});
+	});
+
+	function searchSuccess(data, textStatus, jqXHR){
+		$('#search_results').html(data)
+	}
+</script>
+
+{% if article.count > 0 %}
+
+{% for article in articles %}
+<div>
+<h2><a href="/articles/get/{{ article.id }}/">{{article.title}}</a></h2>
+<p>{{ articles.body|lower|truncatewords:"10" }}</p>
+<p>{{ article.likes }} people liked this article</a></p>
+</div>
+{% endfor %}
+{% else %}
+<p>None to show!</p>
+{% endif %}
+{% endblock %}

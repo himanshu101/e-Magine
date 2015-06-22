@@ -1,0 +1,70 @@
+body{
+	background: #1673E8;
+	background:white;
+	margin: 0;
+	/*padding:2em;*/
+	font-family: 'Lato', sans-serif;
+}
+.main{
+	max-width:40em;
+	position:absolute;
+	right:5%;
+	bottom:25%;
+}
+a:hover,a:link{
+	text-decoration: none;
+}
+.login-form{
+	max-width: 40em;
+	margin:0 auto;
+	padding:1em;
+	font-size:16px;
+	color:white;
+}
+.forgot-pass{
+	max-width: 40em;
+	margin:0 auto;
+	padding:1em;
+	font-size:16px;
+	color:white;
+}
+.main-heading{
+	text-align: center;
+	color:black;
+	margin:1em 0;
+}
+.login-form *,.forgot-pass *{
+	border-radius: 0;
+}
+.signin {
+	background: #fffee5;
+	padding:0.9em;
+	color:black;
+		padding-top: 0;
+}
+.own-login{
+	text-align: center;
+	width:100%;
+	padding:0.6em;
+	background: #3a5795;
+	color:white;
+	font-size:1em;
+	margin-bottom:1em;
+	margin-top:1em;
+}
+.own-login:hover{
+	background: #305ab4;
+}
+.own-pass{
+	text-align: center;
+	width:100%;
+	padding:0.6em;
+	background: #ed4444;
+	color:white;
+	font-size:1em;
+	margin-bottom:1em;
+	margin-top:1em;
+}
+.own-pass:hover{
+	background: #ed4444;
+}

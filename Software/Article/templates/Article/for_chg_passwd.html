@@ -1,0 +1,39 @@
+<html>
+<head>
+	<title>Change Password</title>
+</head>
+<body>
+	{% if show %}
+	<div>
+		<form action="/forgot_passwd/abc/" method="post">
+			<table>
+			<tr>
+				<td>
+					<label>New Password:</label>
+				</td>
+				<td>
+					<input type="password" required="required" name="for_new_password"></input>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>Confirm Password:</label>
+				</td>
+				<td>
+					<input type="password" required="required" name="for_conf_password"></input>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="submit" value="CHANGE PASSWORD" name="submit"></input>
+				</td>
+			</tr>
+			</table>
+		</form>	
+		<br>
+	</div>
+	{% else %}
+		<h3>This Page has been expired.</h3>
+	{% endif %}
+</body>
+</html>

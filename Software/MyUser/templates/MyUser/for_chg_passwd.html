@@ -1,0 +1,155 @@
+<html style="height: 100%; width: 100%;">
+<head>
+	<meta charset="utf-8"> 
+	<title>e-MAGINE::Reset Password</title>
+	
+	<link type="text/css" rel="stylesheet" href="../../static/frontend/bootstrap/css/bootstrap.css">
+	<script src="../../static/frontend/js/jquery-2.1.3.min.js"></script>
+</head>
+<script>
+function scorePassword(pass) {
+    var score = 0;
+    if (!pass)
+        return score;
+    if(pass.length < 8)
+	return -1; 	
+    // award every unique letter until 5 repetitions
+    var letters = new Object();
+    for (var i=0; i<pass.length; i++) {
+        letters[pass[i]] = (letters[pass[i]] || 0) + 1;
+        score += 5.0 / letters[pass[i]];
+    }
+
+    // bonus points for mixing it up
+    var variations = {
+        digits: /\d/.test(pass),
+        lower: /[a-z]/.test(pass),
+        upper: /[A-Z]/.test(pass),
+        nonWords: /\W/.test(pass),
+    }
+
+    variationCount = 0;
+    for (var check in variations) {
+        variationCount += (variations[check] == true) ? 1 : 0;
+    }
+    score += (variationCount - 1) * 10;
+
+    return parseInt(score);
+}
+
+function checkPassStrength(pass) {
+    var score = scorePassword(pass);
+    if(score == -1)
+	return "improper";	
+    if (score > 60)
+        return "strong";
+    if (score > 40)
+        return "good";
+    if (score >= 10)
+        return "weak";
+
+    return "";
+}
+
+$(document).ready(function() {
+    $("#progress").hide();
+    document.getElementById('submit').disabled = true;		
+    $("#reset_password").on("keypress keyup keydown", function() {
+        var pass = $(this).val();
+        var strength = checkPassStrength(pass);
+	if(strength == ""){
+		$("#progress").hide();
+		$("#error").show();	
+		document.getElementById('submit').disabled = true;
+	}
+	else if(strength == "improper"){
+		$("#progress").hide();
+		$("#error").show();
+		document.getElementById('submit').disabled = true;	
+	}
+	else if(strength == "weak"){
+		document.getElementById('submit').disabled = false;
+		$("#progress").show();
+		$("#error").hide();	
+		$("#progress_bar").show();	
+		$("#progress_bar").text("Weak");		
+		$("#progress_bar").addClass("progress-bar-danger");
+		$("#progress_bar").removeClass("progress-bar-warning");
+		$("#progress_bar").css("width","33%");
+	}
+	else if(strength == "good"){
+		document.getElementById('submit').disabled = false;
+		$("#error").hide();
+		$("#progress").show();
+		$("#progress_bar").text("Good");
+		$("#progress_bar").removeClass("progress-bar-danger");
+		$("#progress_bar").removeClass("progress-bar-warning");
+		$("#progress_bar").addClass("progress-bar-warning");
+		$("#progress_bar").css("width","66%");
+	}
+	else if(strength == "strong"){
+		document.getElementById('submit').disabled = false;
+		$("#error").hide();
+		$("#progress").show();
+		$("#progress_bar").text("Strong");
+		$("#progress_bar").removeClass("progress-bar-warning");	
+		$("#progress_bar").addClass("progress-bar-success");	
+		$("#progress_bar").css("width","100%");
+	}
+    });
+});
+</script>
+<body style="background: linear-gradient(#386db1,#4f8ec4);background-repeat: no-repeat;">
+	<img src="../../static/frontend/images/iitp_logo.png" alt="IIT Patna" style="position:absolute;height:82px;left: 15px;top: 1px;">
+	<p style="position:absolute;font-family: Cambria,Georgia,serif; font-size: 30px;color: #e6e6e6; left: 100px; top: 23px">Indian Institute of Technology Patna</p>
+	
+	<div class="container" style="position:absolute;width: 100%;height: 1px;background: #cdcdcd;top: 90px;"></div>
+	{% if show %}
+	<div class="container" style="margin-top: 280px; margin-right: auto; margin-left: auto; width: 60%;">
+	<form class="form-horizontal" role="form" action="/forgot_passwd/abc/" method="post">
+		
+		<div class="form-group">
+			
+			<label class="control-label col-sm-2" style="color: #e6e6e6;">Reset Password:</label>
+				<div class="col-sm-5">
+					<input type="password" class="form-control" id="reset_password" placeholder="Enter New Password" name="for_new_password"  required="required">
+				</div>
+				<input type="hidden" name="userName" value={{user_name}} />
+				<div id="progress" class="col-sm-3" >
+					<div class="progress">
+						<div id="progress_bar" class="progress-bar progress-bar-striped active progress-bar-success col-sm-2" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+					    	</div>
+					</div>
+					<div class="error" id="error">
+						<p>Min Password Length : 8</p>	
+					</div>	
+				</div>
+		</div>
+		<div class="form-group">
+			<label class="control-label col-sm-2" style="color: #e6e6e6;">Confirm Password:</label>
+				<div class="col-sm-5">
+					<input type="password" class="form-control" id="conf_password" placeholder="Confirm Password" name="for_conf_password" required="required">
+				</div>
+			
+		</div>
+		
+				<input id="submit" type="submit" name="submit" value="RESET PASSWORD" Onclick="return clicked()" class="btn btn-success col-sm-offset-3"></input>	
+	</form>
+	
+</div>
+{% else %}
+	<h3>This Page has been expired.</h3>
+{% endif %}
+<script type="text/javascript">
+		function clicked() {
+			if (document.getElementById('reset_password').value == document.getElementById('conf_password').value){
+				return true;	
+			}
+			else{
+				alert('Reset password and Confirm password dont match');
+				return false;
+			}
+		}
+</script>
+</body>	
+</html>

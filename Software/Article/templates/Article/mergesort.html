@@ -1,0 +1,115 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+    <meta charset="UTF-8">
+    <title>DEMO</title>
+    <script src="../../static/frontend/js/fabric.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="../../static/frontend/bootstrap/css/bootstrap.css">
+    <script src="../../static/frontend/js/jquery-2.0.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../static/frontend/bootstrap/css/sort.css">
+    <link rel="stylesheet" type="text/css" href="../../static/frontend/bootstrap/css/animation.css"/>
+    <script src="../../static/frontend/js/classes.js"></script>
+    <script src="../../static/frontend/js/FileSaver.js"></script>
+
+</head>
+<nav class="navbar navbar-default navbar-fixed-top" style="background: #386db1">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+   
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="#">
+        <img alt="Home" src="../../static/frontend/images/Home.png" data-toggle="popover" data-content="Home"/>
+        </a></li>
+        <li><a href="#">
+        <img alt="Algorithm Illustration" src="../../static/frontend/images/stats.png" data-toggle="popover" data-content="Algorithm Illustration"/>
+        </a></li>
+        <li>
+        <input type="text" size="40" placeholder="e.g. 12 89 43 21 90 43 (max 16)" id="inputstr"/>
+        </li>
+        <li>
+        <span class="glyphicon glyphicon-refresh" id="refresh" onclick="refresh()" style="margin-right: 10px;"></span>
+        </li>
+        <li>
+        <button class="btn btn-primary" id="rendbtn" onclick="checkInput()" style="margin-top: 15px;">Render</button>
+        </li>
+        <li>
+        <span class="glyphicon glyphicon-play" id="startbtn" onclick="start()" style="margin-right: 10px;"></span>
+        </li>
+        <li>
+        <span class="glyphicon glyphicon-step-forward" id="nextbtn" onclick="ani()" style="margin-right: 10px;"></span>
+        </li>
+        <li>
+        <label style="margin-top: 20px; color: white; margin-right: 10px;" id="speedlabel">Speed :</label>
+        </li>
+        <li>
+        <label class="radio-inline" style="margin-top: 20px; color: white;margin-right: 10px;" id="optradiolow">
+        <input type="radio" name="optradio">Low
+        </label>
+        </li>
+        <li>
+        <label class="radio-inline" style="margin-top: 20px; color: white;margin-right: 10px;" id="optradiomidl">
+        <input type="radio" name="optradio" id="optradiomid">Mid
+        </label>
+        </li>
+        <li>
+        <label class="radio-inline" style="margin-top: 20px; color: white;" id="optradiohigh">
+        <input type="radio" name="optradio">High
+        </label>
+        </li>
+        <li>
+        <button type="button" class="btn btn-primary" id="codebtn" onclick="codeShow()" style="margin-top: 15px;margin-left: 10px;">Hide Code</button>
+        </li>
+    </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+          <img alt="Edit" src="../../static/frontend/images/edit_user.png"/>
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            {% if user_permission == 0 %}
+                <li><a href="/add_user/">Manage Users</a></li>
+                <li><a href="/myposts/all/">My Posts</a></li>
+                <li><a href="/articles/">Create an Article</a></li>
+            {% endif %}
+            {% if user_permission == 1 %}
+                <li><a href="/myposts/all/">My Posts</a></li>
+                <li><a href="/articles/">Create an Article</a></li>
+            {% endif %}
+            {% if user_permission >= 0%}    
+                <li><a href="/edit/">Edit Profile</a></li>
+            {% endif %}
+            <li class="divider"></li>   
+            <li><a href="/logout/">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+    <body style="background: #EEF2F6">
+        <div class="code">
+        <p id="quickComments">Merge Sort</p>
+            <pre><code style="color:#ffffff;">
+  <span>MergeSort(A,lowIndex,highIndex)</span>
+  <span>    if ( lowIndex < highIndex )</span>
+  <span>        midIndex = ( lowIndex + highIndex )/2</span>
+  <span>        MergeSort(A,lowIndex  ,midIndex)</span>
+  <span>        MergeSort(A,midIndex+1,highIndex)</span>
+  <span>        Merge(A,lowIndex,midIndex,highIndex)</span>
+  </code></pre>
+        </div>
+    
+<button id="rendbtn" onclick="ani()">
+        Step Wise Animation
+    </button> <button id="test" onclick="start()">
+        Toggle Animation
+    </button>
+    <canvas id="c" width="2000" height="700" style="border:1px solid #000000">
+    </canvas>
+    
+     <script src="../../static/frontend/js/mergesort.js"></script>
+
+</body>
+</html>

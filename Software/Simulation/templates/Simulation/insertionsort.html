@@ -1,0 +1,479 @@
+<html>
+	<head>
+	<title>Insertion Sort</title>
+	<script src="../../static/frontend/js/fabric.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="../../static/frontend/bootstrap/css/bootstrap.css">
+    <script src="../../static/frontend/js/jquery-2.0.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../static/frontend/css/sort2.css">
+    <link rel="stylesheet" type="text/css" href="../../static/frontend/css/animation.css"/>
+    <script src="../../static/frontend/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('#startbtn').hide();
+				$('#stepbtn').hide();
+				$('#prevbtn').hide();
+				$('#nextbtn').hide();
+				$('#inputstr2').hide();
+				$('#speedlabel').hide();
+				$('#optradiomidl').hide();
+				$('#optradiolow').hide();
+				$('#optradiohigh').hide();
+				$('[data-toggle="popover"]').popover({
+					placement : 'bottom',
+					trigger:'hover'
+				});
+			});
+		</script>
+	</head>
+	<nav class="navbar navbar-default navbar-fixed-top" style="background: #386db1">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+   
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="/articles/all/">
+		<img alt="Home" src="../../static/frontend/images/Home.png" data-toggle="popover" data-content="Home"/>
+		</a></li>
+		<li><a href="/front/">
+		<img alt="Algorithm Illustration" src="../../static/frontend/images/stats.png" data-toggle="popover" data-content="Algorithm Illustration"/>
+		</a></li>
+		<li>
+		<input type="text" size="40" placeholder="e.g. 12 89 43 21 90 43 (max 25)" id="inputstr" />
+		</li>
+		<li>
+		<span class="glyphicon glyphicon-refresh" id="refresh" onclick="refresh()" style="margin-right: 10px;"></span>
+		</li>
+	    <li>
+		<button class="btn btn-primary" id="rendbtn" onclick="checkInput()" style="margin-top: 15px;">Render</button>
+		</li>
+		<li>
+		<span class="glyphicon glyphicon-play" id="startbtn" onclick="controlAnim()" style="margin-right: 10px;"></span>
+		</li>
+	    <li>
+		<button type="button" class="btn btn-primary" id="stepbtn" onclick="step()" style="margin-top: 15px;margin-right: 10px;">Step</button>
+		</li>
+        <li>
+		<span class="glyphicon glyphicon-step-backward" id="prevbtn" onclick="change(1)"></span>
+		</li>
+		<li>
+		<input type="text" size="1" id="inputstr2"/>
+		</li>
+		<li>
+		<span class="glyphicon glyphicon-step-forward" id="nextbtn" onclick="change(2)" style="margin-right: 10px;"></span>
+		</li>
+		<li>
+		<label style="margin-top: 20px; color: white; margin-right: 10px;" id="speedlabel">Speed :</label>
+		</li>
+		<li>
+		<label class="radio-inline" style="margin-top: 20px; color: white;margin-right: 10px;" id="optradiolow">
+		<input type="radio" name="optradio">Low
+		</label>
+		</li>
+		<li>
+		<label class="radio-inline" style="margin-top: 20px; color: white;margin-right: 10px;" id="optradiomidl">
+		<input type="radio" name="optradio" id="optradiomid">Mid
+		</label>
+		</li>
+		<li>
+		<label class="radio-inline" style="margin-top: 20px; color: white;" id="optradiohigh">
+		<input type="radio" name="optradio">High
+		</label>
+		</li>
+		<li>
+		<button type="button" class="btn btn-primary" id="codebtn" onclick="codeShow()" style="margin-top: 15px;margin-left: 10px;">Hide Code</button>
+		</li>
+	</ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+		  <img alt="Edit" src="../../static/frontend/images/edit_user.png"/>
+		  <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            {% if user_permission == 0 %}
+                <li><a href="/add_user/">Manage Users</a></li>
+                <li><a href="/myposts/all/">My Posts</a></li>
+                <li><a href="/articles/">Create an Article</a></li>
+            {% endif %}
+            {% if user_permission == 1 %}
+                <li><a href="/myposts/all/">My Posts</a></li>
+                <li><a href="/articles/">Create an Article</a></li>
+            {% endif %}
+            {% if user_permission >= 0%}    
+                <li><a href="/edit/">Edit Profile</a></li>
+            {% endif %}
+            <li class="divider"></li>   
+            <li><a href="/logout/">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+	<body style="background: #EEF2F6">
+		<div class="code">
+		<p id="quickComments">Insertion Sort</p>
+			<pre><code style="color:#ffffff;">mark first element as sorted
+  <span>	for each unsorted element</span>
+  <span>		'extract' the element</span>
+  <span>		for i = lastSortedIndex to 0</span>
+  <span>			while currentSortedElement > extractedElement</span>
+  <span>			move sorted element to the right by 1</span>
+  </code></pre>
+		</div>
+		<canvas height="700" width="2000" id="myCanvas" style="margin-top: 6%;">
+		</canvas>
+		
+		<script>
+				document.getElementById("optradiomid").checked=true;
+				document.getElementById("inputstr").value="";
+				document.getElementById("inputstr2").value="";
+				var canvas = new fabric.Canvas('myCanvas');
+				var check1 = -10000;
+				var check2 = -10000;
+				var unianimate = 0;
+				var Y = 50;
+				var maxHeight = 400;
+				var totalWidth = 900;
+				var valuest=[];
+				var valuesback=[];
+				var anim = [];
+				var heights = [];
+				var names = [];
+				var speed;
+				var arrtemp;
+				var codeIsShowing = 1;
+				function checkInput(){
+				var fail = 0;
+				var inp = document.getElementById('inputstr').value;
+				arrtemp = inp.split(' ');
+				names = arrtemp.slice();
+				if(names.length > 25){
+					alert("Maximum Entries : 25 ");
+				}
+				else{
+				for(var a=0;a<names.length;a++){
+					if(names[a] != parseInt(names[a])){
+					 alert("Only Integers allowed");
+					 fail = 1;
+					 break;
+					}
+				}
+				if(fail == 0){
+					rend();
+				}
+				}
+				}
+				
+				function rend(){
+				$('#rendbtn').hide();
+				$('#refresh').hide();
+				$('#startbtn').show();
+				$('#stepbtn').show();
+				$('#prevbtn').show();
+				$('#nextbtn').show();
+				$('#inputstr2').show();
+				$('#speedlabel').show();
+				$('#optradiomidl').show();
+				$('#optradiolow').show();
+				$('#optradiohigh').show();
+				document.getElementById("inputstr2").value=0;
+				
+				var arrinp=[];
+				for(var a=0;a<arrtemp.length;a++){
+					var ini={'cost': arrtemp[a]*(-1),'stindex': a};
+					arrinp.push(ini);
+				}
+		        
+				var quick = arrinp.slice();
+				var len = quick.length;
+				insertionsort(quick);
+				console.log("anim length : "+anim.length);
+				for(var a=0;a<arrinp.length;a++){
+					if(arrinp[quick[a].stindex].cost == check1){
+						arrinp[quick[a].stindex].cost = check2;
+					}
+					else{
+					check1 = arrinp[quick[a].stindex].cost;
+					check2 = 18*(a+1)*(-1);
+					arrinp[quick[a].stindex].cost = 18*(a+1)*(-1);
+					}
+				}
+				
+  			var axes = new fabric.Path('M 1250 0 L 0 0 M 0 -400 ');
+  			axes.set({ fill: 'white', stroke: 'black', opacity: 0.9,strokeWidth: 2, selectable: false });
+  			axes.set({ left: 50, top: 50 });
+  			canvas.add(axes);
+  			// our values
+  			
+  			var i = 0;
+  			for(;i < arrinp.length;i++) {
+				heights.push(arrinp[i].cost);
+  				var rect = new fabric.Rect({
+  					left: i*50+55,
+  					top: Y+400,
+  					fill:'red',
+  					width: 40,
+  					strokeWidth: 2,
+  					height: arrinp[i].cost,
+					selectable: false
+					
+  				});
+				var text = new fabric.Text(''+arrtemp[i],{
+					left: i*50+45,
+  					top: Y+409+(arrtemp[i].length-1)*6,
+  					fill:'blue',
+					fontSize: '16',
+					fontFamily: 'Delicious',
+					angle : '315',
+					selectable: false
+				});
+  				valuesback.push(rect);
+				valuest.push(text);
+  			}
+			var k = 0;
+  			while ( k<valuesback.length ) {
+  				//console.log(values.shift());
+  				canvas.add(valuesback[k]);
+				canvas.add(valuest[k]);
+				k++;
+  			}
+	}
+	
+	function insertionsort(insertion){
+		var j;
+		for(j=1;j<insertion.length;j++){
+		var key = insertion[j].cost;
+		var i = j - 1;
+		var temp = insertion[j];
+		while((i>-1)&&(insertion[i].cost<key)){
+			insertion[i+1] = insertion[i];
+			anim.push({'a':i+1,'b':i});
+			//console.log(i+' '+(i+1));
+			i--;
+		}
+		insertion[i+1] = temp;
+	}
+	}
+	
+		
+			var canAnimate = 1;
+			function swap(i,j){
+				$('#quickComments').text("swap : "+valuest[i].getText()+" & "+valuest[j].getText());
+				var temp1 = valuesback[i];
+				var temp2 = valuesback[j];
+				var ttemp1 = valuest[i];
+				var ttemp2 = valuest[j];
+				
+				var x1 = temp1.left;
+				var x2 = temp2.left;
+				
+				valuesback[i] = temp2;
+				valuesback[j] = temp1;
+				valuest[i] = ttemp2;
+				valuest[j] = ttemp1;
+				
+				temp1.set('fill','blue');
+				temp2.set('fill','black');
+				temp1.animate('left', x2 , {
+ 					 onChange: canvas.renderAll.bind(canvas),
+  					 duration: speed,
+  					 onComplete: function(){
+						temp1.set('fill','red');
+  					 },
+  					
+				});
+				
+				temp2.animate('left', x1 , {
+ 					 onChange: canvas.renderAll.bind(canvas),
+  					 duration: speed,
+  					 onComplete: function(){
+						temp2.set('fill','red');	
+  					 },
+  					 
+				});
+				ttemp1.animate('left', x2-10 , {
+ 					 onChange: canvas.renderAll.bind(canvas),
+  					 duration: speed
+				});
+				
+				ttemp2.animate('left', x1-10 , {
+ 					 onChange: canvas.renderAll.bind(canvas),
+  					 duration: speed  					 
+				});
+				
+			}
+			function doAnimate(animation) {
+				if ( animation.length > 0 ) {
+					//console.log(animation[0].a+' '+animation[0].b);
+					swap(animation[0].a, animation[0].b);
+					animation.shift();
+					return 1;
+				} else {
+					$('#quickComments').css("background", "#437c17");
+					$('#quickComments').text("Sorting Complete");
+					for(var a=0;a<valuesback.length;a++){
+						valuesback[a].set('fill','green');
+						}
+					return 0;
+				}
+				}
+			
+			function start() {
+				
+				var radspeed = getRadioValue();
+				if(radspeed==0){
+					speed = 2750;
+				}
+				else if(radspeed==1){
+					speed = 1200;
+				}
+				else{
+					speed = 300;
+				}
+				intspeed = speed + 300;
+				var t = setInterval( function(){
+				canAnimate = doAnimate( anim );
+				
+				if( canAnimate === 0 || unianimate == 0) {
+					clearInterval(t);
+				}
+				canvas.renderAll();
+			}, intspeed );
+			}
+			
+			function controlAnim(){
+				$('#stepbtn').hide();
+				$('#prevbtn').hide();
+				$('#nextbtn').hide();
+				$('#inputstr2').hide();
+				if(unianimate == 1){
+					unianimate = 0;
+					$("#startbtn").removeClass("glyphicon glyphicon-pause");
+					$("#startbtn").addClass("glyphicon glyphicon-play");
+				}
+				else{
+					$("#startbtn").removeClass("glyphicon glyphicon-play");
+					$("#startbtn").addClass("glyphicon glyphicon-pause");
+					unianimate = 1;
+					start();
+				}
+			
+			}
+			
+			function step(){
+				$('#startbtn').hide();
+				$('#speedlabel').hide();
+				$('#optradiomidl').hide();
+				$('#optradiolow').hide();
+				$('#optradiohigh').hide();
+				//console.log(names);
+				//console.log(heights);
+				var dupnames = names.slice();
+				var dupheights = heights.slice();
+				var z=0;
+				
+				for(z=0;z<valuesback.length;z++){
+					valuesback[z].set('fill','red');
+				}
+				
+				var inp1 = document.getElementById("inputstr2").value;
+				console.log(inp1);
+				if(inp1<=anim.length-1 && inp1>=0){
+				
+				for(z=0;z<=inp1;z++){
+					console.log("loop start")
+					
+						var temp1 = dupheights[anim[z].a];
+						var temp2 = dupheights[anim[z].b];
+						dupheights[anim[z].a] = temp2;
+						dupheights[anim[z].b] = temp1;
+						var ttemp1 = dupnames[anim[z].a];
+						var ttemp2 = dupnames[anim[z].b];
+						dupnames[anim[z].a] = ttemp2;
+						dupnames[anim[z].b] = ttemp1;
+						
+					}
+				
+				 for(z=0;z<valuesback.length;z++){
+					valuesback[z].animate('height', dupheights[z] , {
+ 					 onChange: canvas.renderAll.bind(canvas),
+  					 duration: 800,
+  					 onComplete: function(){
+						
+  					 },
+  					 
+				});
+					valuest[z].setText(dupnames[z]);
+					valuest[z].set('top',Y+409+(dupnames[z].length-1)*6);
+				 }
+				 $('#quickComments').text("swap : "+valuest[anim[inp1].a].getText()+" & "+valuest[anim[inp1].b].getText());
+				 }
+				 if(inp1==(anim.length-1)){
+					$('#quickComments').text("Sorting Complete");
+					for(z=0;z<valuesback.length;z++){
+					valuesback[z].set('fill','green');
+  				}
+				 }
+				
+				else if(inp1>=anim.length){
+					alert("Maximum Steps : "+(anim.length-1));
+				}
+				else if(inp1<0){
+					alert("Negative State Not Possible");
+				}
+					document.getElementById("startbtn").disabled = true;
+				
+			}
+				function change(ch){
+					if(ch==2){
+					var inp2 = document.getElementById("inputstr2").value;
+					var tmp = parseInt(inp2);
+					tmp = tmp + 1;
+					if(inp2<anim.length && inp2>=0){
+					document.getElementById("inputstr2").value = tmp;
+					step();
+					}
+					}
+					else{
+					var inp2 = document.getElementById("inputstr2").value;
+					inp2-=1;
+					if(inp2<anim.length && inp2>=0){
+					document.getElementById("inputstr2").value = inp2;
+					step();
+					}
+					}
+				}
+				function getRadioValue()
+				{
+						for (var i = 0; i < document.getElementsByName('optradio').length; i++)
+					{
+						if (document.getElementsByName('optradio')[i].checked)
+						{
+							return i;
+						}
+					}
+				}
+				
+				function refresh(){
+					document.getElementById("inputstr").value="";
+				}
+				
+				function codeShow(){
+					if(codeIsShowing == 1){
+						codeIsShowing=0;
+						$('#codebtn').text("Show Code");
+						$(".code").hide();
+					}
+					else{
+						codeIsShowing=1;
+						$('#codebtn').text("Hide Code");
+						$(".code").show();
+					}
+				}
+				
+			canvas.renderAll();
+  			
+		</script>
+	</body>
+</html>

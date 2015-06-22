@@ -1,0 +1,238 @@
+<html style="height: 100%; width: 100%;">
+	<head>
+		<meta charset="utf-8"> 
+		<title>Algorithm Illustration</title>
+		<script src="../../static/frontend/js/fabric.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="../../static/frontend/bootstrap/css/bootstrap.css">
+    <script src="../../static/frontend/js/jquery-2.0.0.min.js"></script>
+    <script src="../../static/frontend/bootstrap/js/bootstrap.min.js"></script>
+	
+	</head>
+	<body style="background: linear-gradient(#386db1,#4f8ec4);background-repeat: no-repeat;">
+		<button type="button" class="btn btn-default btn-lg" onclick="home()" style="position:absolute;left: 25px;top: 25px;">
+      <span class="glyphicon glyphicon-home"></span> Home
+    </button>
+		<div class="container" style="width: 50%; margin-left:auto; margin-right: auto; margin-top: 9%;">
+			<div class="row">
+				<div id="scan" class="container col-sm-5" style="border: 2px solid; border-radius: 15px;height: 300px;margin-right: 100px;background: #FFF;border-color: #ffffff">
+				<div style="background: #86c67c;margin-top: 20px;padding-bottom: 20px;">
+					<canvas height="170" width="240" id="SCanvas">
+					</canvas>
+				</div>
+					<br>
+					<div class="btn-group">
+					<button type="button" class="btn btn-success dropdown-toggle btn-lg" data-toggle="dropdown" aria-expanded="false">
+					Sorting Algorithms <span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu" role="menu">
+					<li><a href="/bubblesort/">Bubble Sort</a></li>
+					<li><a href="/insertionsort/">Insertion Sort</a></li>
+					<li><a href="/selectionsort/">Selection Sort</a></li>
+					<li><a href="/quicksort/">Quick Sort</a></li>
+					<li><a href="/mergesort/">Merge Sort</a></li>
+					<li><a href="/shellsort/">Shell Sort</a></li>
+					<li class="divider"></li>
+					<li><a href="/sorttut/">View Tutorial</a></li>
+					</ul>
+					</div>
+				</div>
+				<div id="gcan" class="container col-sm-5" style="border: 2px solid; border-radius: 15px;height: 300px;background: #FFF;border-color: #ffffff">
+				<div style="background: #ff7f24;margin-top: 20px;padding-bottom: 20px;">
+					<canvas height="170" width="240" id="GCanvas">
+					</canvas>
+				</div>
+					<br>
+					<div class="btn-group">
+					<button type="button" class="btn btn-warning dropdown-toggle btn-lg" data-toggle="dropdown" aria-expanded="false">
+					Graph Algorithms <span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu" role="menu">
+					<li><a href="/bfs/">BFS</a></li>
+					<li><a href="/dfs/">DFS</a></li>
+					<li><a href="/kruskal/">Kruskal</a></li>
+					<li><a href="/prim/">Prim</a></li>
+					<li><a href="/dijkstra/">Dijkstra</a></li>
+					<li><a href="/bellmann/">Bellmann Ford</li>
+					<li class="divider"></li>
+					<li><a href="/graphtut/">View Tutorial</a></li>
+					</ul>
+					</div>
+					<br>
+				</div>
+			</div>
+		</div>
+		<script>
+		function home(){
+			window.location.href = "/articles/all/"
+		}
+			$(function() {
+				$('#scan').mouseover(function() {
+							startRectAnim();
+						}).mouseout(function() {
+							//restoreRect();
+						}).mouseout();
+			});
+			$(function() {
+				$('#gcan').mouseover(function() {
+							startGraphAnim(1);
+						}).mouseout(function() {
+							//restoreRect();
+						}).mouseout();
+			});
+			var check =1;
+			var scanvas = new fabric.Canvas('SCanvas');
+			var gcanvas = new fabric.Canvas('GCanvas');
+			var rect1 = new fabric.Rect({
+				left: 48,
+				top : 190,
+				fill: 'white',
+				width: 30,
+				height: -80,
+				selectable: false
+			});
+			var rect2 = new fabric.Rect({
+				left: 84,
+				top : 190,
+				fill: 'white',
+				width: 30,
+				height: -50,
+				selectable: false
+			});
+			var rect3 = new fabric.Rect({
+				left: 120,
+				top : 190,
+				fill: 'white',
+				width: 30,
+				height: -150,
+				selectable: false
+			});
+			var rect4 = new fabric.Rect({
+				left: 156,
+				top : 190,
+				fill: 'white',
+				width: 30,
+				height: -110,
+				selectable: false
+			});
+			var cir1 = new fabric.Circle({
+				radius: 15,
+				left: 32,
+				top: 120,
+				stroke: 'white',
+				fill: '#ff7f25',
+				strokeWidth: 3,
+				selectable: false
+			});
+			var cir2 = new fabric.Circle({
+				radius: 15,
+				left: 80,
+				top: 25,
+				stroke: 'white',
+				fill: '#ff7f25',
+				strokeWidth: 3,
+				selectable: false
+			});
+			var cir3 = new fabric.Circle({
+				radius: 15,
+				left: 170,
+				top: 60,
+				stroke: 'white',
+				fill: '#ff7f25',
+				strokeWidth: 3,
+				selectable: false
+			});
+			var cir4 = new fabric.Circle({
+				radius: 15,
+				left: 130,
+				top: 130,
+				stroke: 'white',
+				fill: '#ff7f25',
+				strokeWidth: 3,
+				selectable: false
+			});
+			var line1 = new fabric.Line([40, 88, 72, 19],{
+				fill: 'white',
+				stroke: 'white',
+				strokeWidth: 3,
+				selectable: false
+			});	
+			var line2 = new fabric.Line([75, 36, 138, 61],{
+				fill: 'white',
+				stroke: 'white',
+				strokeWidth: 3,
+				selectable: false
+			});	
+			var line3 = new fabric.Line([81, 16, 118, 94],{
+				fill: 'white',
+				stroke: 'white',
+				strokeWidth: 3,
+				selectable: false
+			});	
+			scanvas.add(rect1);
+			scanvas.add(rect2);
+			scanvas.add(rect3);
+			scanvas.add(rect4);
+			gcanvas.add(cir1);
+			gcanvas.add(cir2);
+			gcanvas.add(cir3);
+			gcanvas.add(cir4);
+			gcanvas.add(line1);
+			gcanvas.add(line2);
+			gcanvas.add(line3);
+			
+			function startRectAnim(){
+				rect1.animate('height', -50 , {
+ 					 onChange: scanvas.renderAll.bind(scanvas),
+  					 duration: 700,
+  					 onComplete: function(){
+						rect1.set('height',-50);
+  					 },
+  					 //easing: fabric.util.ease.easeOutBounce
+				});
+				rect2.animate('height', -80 , {
+ 					 onChange: scanvas.renderAll.bind(scanvas),
+  					 duration: 700,
+  					 onComplete: function(){
+						rect2.set('height',-80);
+  					 },
+  					 //easing: fabric.util.ease.easeOutBounce
+				});
+				rect3.animate('height', -110 , {
+ 					 onChange: scanvas.renderAll.bind(scanvas),
+  					 duration: 700,
+  					 onComplete: function(){
+						rect3.set('height',-110);
+  					 },
+  					 //easing: fabric.util.ease.easeOutBounce
+				});
+				rect4.animate('height', -150 , {
+ 					 onChange: scanvas.renderAll.bind(scanvas),
+  					 duration: 700,
+  					 onComplete: function(){
+						rect4.set('height',-150);
+  					 },
+  					 //easing: fabric.util.ease.easeOutBounce
+				});
+			}
+			
+			function startGraphAnim(ch){
+				if(check == ch){
+				check=2;
+				line1.set('strokeWidth',0);
+				line2.set('strokeWidth',0);
+				line3.set('strokeWidth',0);
+				cir1.set('fill','#ffffff');
+				setTimeout(function(){ line1.set('strokeWidth',5);gcanvas.renderAll(); }, 500);
+				setTimeout(function(){ cir2.set('fill','#ffffff');gcanvas.renderAll();}, 900);
+				setTimeout(function(){ line2.set('strokeWidth',5);gcanvas.renderAll();}, 1200);
+				setTimeout(function(){ cir3.set('fill','#ffffff');gcanvas.renderAll();}, 1500);
+				setTimeout(function(){ line3.set('strokeWidth',5);gcanvas.renderAll();}, 1800);
+				setTimeout(function(){ cir4.set('fill','#ffffff');gcanvas.renderAll();}, 2100);
+				}
+			}
+			
+			scanvas.renderAll();
+		    gcanvas.renderAll();
+		</script>
+	</body>
+</html>
